@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-section-title {
+  color: $blue;
+  font-family: $font-en;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: rem(40);
+  text-align: center;
+  line-height: calc(49 / 40);
+  & ::before {
+    content: "";
+  }
+  & span {
+    color: $red;
+  }
+
+  @include mq("md") {
+    font-size: rem(91);
+    text-align: start;
+  }
+}
+
+.c-section-title__en {
+  display: inline-block;
+  font-size: rem(13);
+  letter-spacing: 0.2em;
+}
+
+.c-section-title__square {
+  display: inline-block;
+  width: 2px;
+  height: rem(22);
+  background-color: $red;
+  margin: 0 auto;
+  display: flex;
+}
