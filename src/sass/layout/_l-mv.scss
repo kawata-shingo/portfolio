@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.l-mv_text {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.l-mv__img {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.l-mv__scroll {
+  margin-top: rem(32);
+  margin-bottom: rem(8);
+}
