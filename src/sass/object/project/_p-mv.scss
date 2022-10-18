@@ -5,9 +5,9 @@
   height: calc(100vh - #{rem(90)});
   min-height: rem(630);
   overflow-x: hidden;
-  background-color: lightgreen;
   display: flex;
   align-items: flex-end;
+  background-color: $white;
   @include mq("md") {
     display: flex;
     align-items: center;
@@ -59,14 +59,7 @@
 .p-mv__img {
   width: rem(375);
   margin: 0 auto;
-  & img {
-    width: rem(375);
-  }
   @include mq("md") {
     width: rem(616);
-    height: rem(616);
-    & img {
-      width: rem(616);
-    }
   }
 }
