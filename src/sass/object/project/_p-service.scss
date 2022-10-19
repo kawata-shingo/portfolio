@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.p-service {
+  padding-top: rem(144);
+  padding-bottom: rem(160);
+  background-color: $light-blue;
+  position: relative;
+
+  & .c-section-title {
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -57%);
+  }
+}
