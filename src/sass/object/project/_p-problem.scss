@@ -10,7 +10,6 @@
   height: rem(152);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: rem(24);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -22,20 +21,17 @@
   font-size: rem(20);
   font-weight: bold;
   line-height: calc(28 / 20);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
 }
 
 .p-problem__check-img {
-  position: relative;
-  width: rem(99);
+  position: absolute;
+  top: 50%;
+  right: rem(-12);
+  transform: translateY(-50%);
+  width: rem(111);
   height: rem(88);
-  & img {
-    width: rem(111);
-    position: absolute;
-    top: 0;
-    right: rem(-12);
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 }
 
 .p-problem__img {
@@ -43,10 +39,10 @@
   display: flex;
   justify-content: center;
   margin-top: rem(32);
+  margin-bottom: rem(32);
 }
 
 .p-problem__left {
-  margin-top: rem(32);
   & :nth-child(n + 2) {
     margin-top: rem(24);
   }
