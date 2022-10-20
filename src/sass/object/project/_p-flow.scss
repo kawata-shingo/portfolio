@@ -1,0 +1,86 @@
+@use "global" as *;
+
+.p-flow {
+  position: relative;
+  padding-top: rem(144);
+  padding-bottom: rem(160);
+  background-color: $light-blue;
+
+  & .c-section-title {
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -57%);
+  }
+}
+
+.p-flow__description {
+  display: inline-block;
+  font-size: rem(13);
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  & span {
+    color: $red;
+  }
+}
+
+.p-flow__step {
+  margin-top: rem(8);
+  border-top: 1px solid #000;
+  padding: rem(24) rem(8);
+}
+
+.p-flow__number {
+  font-family: $font-en;
+  font-size: rem(20);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.p-flow__step-title {
+  font-size: rem(18);
+  font-weight: bold;
+  color: $red;
+}
+
+.p-flow__step-text {
+  margin-top: rem(16);
+  font-size: rem(14);
+  font-weight: 500;
+  text-align: justify;
+}
+
+.p-flow-table {
+  margin-top: rem(16);
+  & tr,
+  th,
+  td {
+    display: block;
+  }
+}
+
+.p-flow-table__title {
+  font-size: rem(18);
+  font-weight: bold;
+  width: calc(100vw - #{rem(64)});
+  background-color: $red;
+  color: $white;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+}
+
+.p-flow-table__item {
+  background-color: $white;
+  padding: rem(16);
+}
+
+.p-flow-table__text {
+  margin-top: rem(16);
+  font-size: rem(14);
+  font-weight: 500;
+  text-align: justify;
+}

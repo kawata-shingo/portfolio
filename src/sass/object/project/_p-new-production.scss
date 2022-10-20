@@ -69,22 +69,3 @@
     font-size: rem(11);
   }
 }
-
-.p-new-production__warning {
-  font-size: rem(13);
-  font-weight: 500;
-
-  & p {
-    position: relative;
-    padding-left: rem(16);
-    margin-top: rem(16);
-    text-align: justify;
-
-    &::before {
-      content: "※";
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-}

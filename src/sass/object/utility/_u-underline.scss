@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.u-underline {
+  text-decoration: underline;
+
+  &:hover {
+    color: $red;
+  }
+}

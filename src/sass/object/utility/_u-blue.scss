@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.u-blue {
+  color: $blue;
+}
+
+.u-blue__bg {
+  background-color: $blue;
+}
