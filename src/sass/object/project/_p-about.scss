@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.p-about {
+  width: 100%;
+  position: relative;
+  padding-top: rem(144);
+  padding-bottom: rem(160);
+  background-color: $white;
+
+  & .c-section-title {
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+
+.p-about__avatar {
+  width: rem(136);
+  margin: 0 auto;
+}
+
+.p-about__unit {
+  line-height: 1em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.p-about__category {
+  font-size: rem(10);
+}
+
+.p-about__name {
+  font-size: rem(18);
+  font-weight: bold;
+}
+
+.p-about__lead {
+  font-size: rem(12);
+}
+
+.p-about__text {
+  padding-top: rem(24);
+  font-size: rem(13);
+  font-weight: 500;
+  text-align: justify;
+}

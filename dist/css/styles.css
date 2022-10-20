@@ -221,22 +221,32 @@ button {
   padding-bottom: 10rem;
 }
 
-.c-switch-link {
-  background-color: #fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 9999px;
-  color: #1d1d1d;
-  display: inline-grid;
-  min-height: 3.5rem;
-  min-width: 14.75rem;
-  padding: 0 1em;
-  place-items: center;
+.c-button {
   position: relative;
-  -webkit-transition: color 0.5s cubic-bezier(0.26, 0.06, 0, 1), background-color 0.5s cubic-bezier(0.26, 0.06, 0, 1), border-color 0.5s cubic-bezier(0.26, 0.06, 0, 1);
-  transition: color 0.5s cubic-bezier(0.26, 0.06, 0, 1), background-color 0.5s cubic-bezier(0.26, 0.06, 0, 1), border-color 0.5s cubic-bezier(0.26, 0.06, 0, 1);
+  width: 100%;
+  min-height: 3.5rem;
+  margin-top: 3.5rem;
 }
 
-.c-switch-link__circle {
+.c-button__link {
+  background-color: #fff;
+  border: 2px solid #dc3001;
+  border-radius: 9999px;
+  color: #dc3001;
+  display: inline-grid;
+  min-height: 3.5rem;
+  width: 14.75rem;
+  padding: 0 1.5rem;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.c-button__circle {
   background-color: #dc3001;
   border-radius: 9999px;
   color: #fff;
@@ -246,64 +256,19 @@ button {
   place-items: center;
   position: absolute;
   top: calc(50% - 1.125rem);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
   width: 2.25rem;
 }
-.c-switch-link__circle::after {
+.c-button__circle::after {
   content: "";
   position: absolute;
   top: 0.8125rem;
   left: 0.625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-.c-switch-link__label {
-  display: block;
-  position: relative;
-  text-align: center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s;
-  transition: -webkit-transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s;
-  transition: transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s;
-  transition: transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s, -webkit-transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s;
-}
-
-.c-switch-link__label > span:first-child {
-  padding-left: 2.25rem;
-}
-
-.c-switch-link__label > span {
-  display: block;
-  padding-top: 0.2em;
-  width: 100%;
-}
-
-.c-switch-link__label > span:nth-child(2) {
-  left: 0;
-  opacity: 0;
-  padding-right: 2.25rem;
-  position: absolute;
-  top: 0;
-  -webkit-transform: translate3d(0, 200%, 0);
-          transform: translate3d(0, 200%, 0);
-  -webkit-transition: opacity 0.4s cubic-bezier(0.26, 0.06, 0, 1), -webkit-transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1);
-  transition: opacity 0.4s cubic-bezier(0.26, 0.06, 0, 1), -webkit-transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1);
-  transition: transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1), opacity 0.4s cubic-bezier(0.26, 0.06, 0, 1);
-  transition: transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1), opacity 0.4s cubic-bezier(0.26, 0.06, 0, 1), -webkit-transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1);
-  white-space: nowrap;
-}
-
-.c-switch-link__label > span {
-  display: block;
-  padding-top: 0.2em;
-  width: 100%;
 }
 
 .c-card {
@@ -448,6 +413,54 @@ button {
   left: 0;
 }
 
+.p-about {
+  width: 100%;
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+}
+.p-about .c-section-title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+}
+
+.p-about__avatar {
+  width: 8.5rem;
+  margin: 0 auto;
+}
+
+.p-about__unit {
+  line-height: 1em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.p-about__category {
+  font-size: 0.625rem;
+}
+
+.p-about__name {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.p-about__lead {
+  font-size: 0.75rem;
+}
+
+.p-about__text {
+  padding-top: 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
 .p-advantages {
   position: relative;
   padding-top: 9rem;
@@ -464,7 +477,7 @@ button {
 }
 
 .p-advantages__point {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .p-advantages__point-title {
@@ -569,7 +582,6 @@ button {
 }
 
 .p-flow__step {
-  margin-top: 0.5rem;
   border-top: 1px solid #000;
   padding: 1.5rem 0.5rem;
 }

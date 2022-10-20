@@ -1,22 +1,29 @@
 @use "global" as *;
 
-.c-switch-link {
+.c-button {
+  position: relative;
+  width: 100%;
+  min-height: rem(56);
+  margin-top: rem(56);
+}
+.c-button__link {
   background-color: #fff;
-  border: 1px solid #d8d8d8;
+  border: 2px solid $red;
   border-radius: 9999px;
-  color: #1d1d1d;
+  color: $red;
   display: inline-grid;
   min-height: rem(56);
-  min-width: rem(236);
-  padding: 0 1em;
+  width: rem(236);
+  padding: 0 rem(24);
   place-items: center;
-  position: relative;
-  transition: color 0.5s cubic-bezier(0.26, 0.06, 0, 1),
-    background-color 0.5s cubic-bezier(0.26, 0.06, 0, 1),
-    border-color 0.5s cubic-bezier(0.26, 0.06, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
 }
 
-.c-switch-link__circle {
+.c-button__circle {
   background-color: $red;
   border-radius: 9999px;
   color: #fff;
@@ -26,8 +33,7 @@
   place-items: center;
   position: absolute;
   top: calc(50% - #{rem(36)} / 2);
-  transform: translateZ(0);
-  width: #{rem(36)};
+  width: rem(36);
 
   &::after {
     content: "";
@@ -36,42 +42,8 @@
     left: rem(10);
     width: rem(10);
     height: rem(10);
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
     transform: rotate(45deg);
   }
-}
-
-.c-switch-link__label {
-  display: block;
-  position: relative;
-  text-align: center;
-  transform: translateZ(0);
-  transition: transform 0.45s cubic-bezier(0.47, 0.16, 0.24, 1) 0.3s;
-}
-
-.c-switch-link__label > span:first-child {
-  padding-left: rem(36);
-}
-.c-switch-link__label > span {
-  display: block;
-  padding-top: 0.2em;
-  width: 100%;
-}
-
-.c-switch-link__label > span:nth-child(2) {
-  left: 0;
-  opacity: 0;
-  padding-right: rem(36);
-  position: absolute;
-  top: 0;
-  transform: translate3d(0, 200%, 0);
-  transition: transform 0.6s cubic-bezier(0.43, 0.05, 0.17, 1),
-    opacity 0.4s cubic-bezier(0.26, 0.06, 0, 1);
-  white-space: nowrap;
-}
-.c-switch-link__label > span {
-  display: block;
-  padding-top: 0.2em;
-  width: 100%;
 }
