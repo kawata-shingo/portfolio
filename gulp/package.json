@@ -1,7 +1,7 @@
 {
   "name": "cocomate",
   "version": "1.0.0",
-  "description": "cocomateのコンテンツで使用するgulp環境",
+  "description": "portfolioで使用するgulp環境",
   "main": "index.js",
   "author": "",
   "license": "ISC",
