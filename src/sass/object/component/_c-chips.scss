@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-chips {
+  padding: rem(2) rem(16);
+  background-color: $blue;
+  border-radius: rem(100);
+  color: $white;
+  font-size: rem(10);
+  text-align: center;
+}
+
+.c-chips--lightblue {
+  background-color: #468686;
+}

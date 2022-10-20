@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-option-card {
+  width: calc((#{rem(375)} - #{rem(48)} - #{rem(48)}) / 2);
+}
+
+.c-option-card__img {
+  width: rem(115);
+  height: rem(90);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-option-card__title {
+  position: relative;
+  height: rem(40);
+  text-align: center;
+  font-size: rem(14);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: rem(8);
+
+  & span {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.p-option-card__text {
+  margin-top: rem(8);
+  font-size: rem(13);
+  font-weight: 400;
+  text-align: justify;
+}

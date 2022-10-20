@@ -6,3 +6,10 @@
   column-gap: rem(16);
   row-gap: rem(32);
 }
+
+.p-option-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: rem(16);
+  row-gap: rem(48);
+}

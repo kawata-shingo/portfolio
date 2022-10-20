@@ -33,7 +33,7 @@
   width: 2px;
   height: rem(24);
   background-color: $red;
-  margin: 0 auto;
+  margin: 0 auto rem(8) auto;
   display: flex;
 
   @include mq("md") {

@@ -52,6 +52,7 @@
   margin-top: rem(32);
   font-size: rem(14);
   font-weight: 500;
+  text-align: justify;
 }
 
 .p-advantages__point-list {
@@ -62,6 +63,7 @@
     font-size: rem(13);
     font-weight: 500;
     margin-top: rem(16);
+    text-align: justify;
     &::before {
       content: "";
       position: absolute;
