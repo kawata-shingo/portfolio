@@ -3,11 +3,15 @@
 .c-button {
   position: relative;
   min-height: rem(56);
+}
+.c-button--margin {
   margin-top: rem(56);
+}
+.c-button--height {
+  min-height: rem(72);
 }
 .c-button__link {
   background-color: #fff;
-  box-sizing: border-box;
   border: 2px solid $red;
   border-radius: 9999px;
   color: $red;
@@ -21,20 +25,33 @@
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
+  text-align: center;
 }
 
 .c-button__link--big {
   min-width: rem(312);
 }
 
-.c-button_link--small {
+.c-button__link--small {
   min-width: rem(224);
+}
+
+.c-button__link--borer-white {
+  border: 2px solid $white;
+}
+
+.c-button__link--blue {
+  color: $blue;
+}
+
+.c-button__link--tall {
+  min-height: rem(72);
 }
 
 .c-button__circle {
   background-color: $red;
   border-radius: 9999px;
-  color: #fff;
+  color: $white;
   display: grid;
   height: rem(36);
   left: calc(#{rem(36)} / 4);
@@ -46,12 +63,46 @@
   &::after {
     content: "";
     position: absolute;
-    top: rem(13);
-    left: rem(10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: rem(10);
     height: rem(10);
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    margin-right: rem(4);
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
     transform: rotate(45deg);
+  }
+}
+
+.c-button__circle--blue {
+  background-color: $blue;
+}
+
+.c-button__circle--big {
+  width: rem(48);
+  height: rem(48);
+  top: calc(50% - #{rem(48)} / 2);
+}
+
+.c-button__circle--email {
+  &::after {
+    width: rem(24);
+    height: rem(22);
+    margin-right: 0;
+    transform: rotate(0);
+    border: none;
+    background: url("../images/contact_email.svg") no-repeat;
+  }
+}
+
+.c-button__circle--calendar {
+  &::after {
+    width: rem(24);
+    height: rem(22);
+    margin-right: 0;
+    transform: rotate(0);
+    border: none;
+    background: url("../images/contact_calendar.svg") no-repeat;
   }
 }

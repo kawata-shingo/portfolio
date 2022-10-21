@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.p-contact {
+  background-color: $red;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: rem(390);
+    height: rem(395);
+    opacity: 0.3;
+    background: url("../images/contact_logo.svg");
+  }
+}
+
+.p-contact-title {
+  color: $white;
+  text-align: center;
+  line-height: 1em;
+}
+
+.p-contact-title__en {
+  font-size: rem(40);
+  font-weight: bold;
+  font-family: $font-en;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.p-contact-title__ja {
+  opacity: 0.5;
+  font-size: rem(20);
+}
+
+.p-contact-button {
+  padding-top: rem(40);
+}
+
+.p-contact-button__label {
+  color: $white;
+  font-size: rem(16);
+  font-weight: bold;
+  margin-bottom: rem(24);
+  display: inline-block;
+}
