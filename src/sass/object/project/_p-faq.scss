@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.p-faq {
+  width: 100%;
+  position: relative;
+  padding-top: rem(144);
+  padding-bottom: rem(160);
+  background-color: $light-blue;
+
+  & .c-section-title {
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+.p-faq__wrapper {
+  border-top: 1px solid #000;
+  padding: rem(24) rem(8);
+}
+
+.p-faq__q {
+  position: relative;
+  font-size: rem(16);
+  font-weight: bold;
+  color: $blue;
+  padding-left: rem(32);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(24);
+    height: rem(24);
+    border-radius: rem(100);
+    background-color: $blue;
+  }
+
+  &:after {
+    content: "Q";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-en;
+    font-size: rem(13);
+    color: $white;
+    width: rem(24);
+    height: rem(24);
+  }
+}
+
+.p-faq__a {
+  position: relative;
+  padding-left: rem(32);
+  margin-top: rem(16);
+
+  & span {
+    font-size: rem(16);
+    font-weight: bold;
+    color: $red;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(24);
+    height: rem(24);
+    border-radius: rem(100);
+    background-color: $red;
+  }
+
+  &:after {
+    content: "A";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-en;
+    font-size: rem(13);
+    color: $white;
+    width: rem(24);
+    height: rem(24);
+  }
+}
+
+.p-faq__text {
+  margin-top: rem(16);
+  font-size: rem(13);
+  font-weight: 500;
+  text-align: justify;
+}

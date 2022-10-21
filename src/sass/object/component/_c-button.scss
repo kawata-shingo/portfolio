@@ -2,18 +2,18 @@
 
 .c-button {
   position: relative;
-  width: 100%;
   min-height: rem(56);
   margin-top: rem(56);
 }
 .c-button__link {
   background-color: #fff;
+  box-sizing: border-box;
   border: 2px solid $red;
   border-radius: 9999px;
   color: $red;
   display: inline-grid;
   min-height: rem(56);
-  width: rem(236);
+  min-width: rem(248);
   padding: 0 rem(24);
   place-items: center;
   position: absolute;
@@ -21,6 +21,14 @@
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
+}
+
+.c-button__link--big {
+  min-width: rem(312);
+}
+
+.c-button_link--small {
+  min-width: rem(224);
 }
 
 .c-button__circle {
