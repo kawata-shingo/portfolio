@@ -35,7 +35,6 @@
 .c-button__link--small {
   min-width: rem(224);
 }
-
 .c-button__link--borer-white {
   border: 2px solid $white;
 }
@@ -92,7 +91,7 @@
     margin-right: 0;
     transform: rotate(0);
     border: none;
-    background: url("../images/contact_email.svg") no-repeat;
+    background: url("../images/contact_email.svg") center/100% no-repeat;
   }
 }
 
@@ -103,6 +102,6 @@
     margin-right: 0;
     transform: rotate(0);
     border: none;
-    background: url("../images/contact_calendar.svg") no-repeat;
+    background: url("../images/contact_calendar.svg") center/100% no-repeat;
   }
 }

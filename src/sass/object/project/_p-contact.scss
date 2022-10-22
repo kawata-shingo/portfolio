@@ -8,7 +8,7 @@
   z-index: 5;
   overflow: hidden;
 
-  &::after {
+  &::before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -16,9 +16,10 @@
     left: 80%;
     transform: translate(-50%, -50%);
     width: rem(390);
+
     height: rem(395);
     opacity: 0.3;
-    background: url("../images/contact_logo.svg");
+    background: url("../images/contact_logo.svg") center/100% no-repeat;
   }
 }
 

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.c-logo {
+  width: 100%;
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+  @include mq("md") {
+    .sp {
+      display: none;
+    }
+    .pc {
+      display: block;
+    }
+    width: rem(384);
+  }
+}

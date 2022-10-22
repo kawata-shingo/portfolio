@@ -1,16 +1,9 @@
 @use "global" as *;
 
 .c-section-title {
-  color: $blue;
-  font-family: $font-en;
-  font-weight: bold;
   text-transform: uppercase;
   font-size: rem(40);
-  text-align: center;
   line-height: calc(49 / 40);
-  & span {
-    color: $red;
-  }
 
   @include mq("md") {
     font-size: rem(91);
@@ -18,10 +11,10 @@
   }
 }
 
-.c-section-title__en {
+.c-section-title__sub {
   display: inline-block;
-  font-size: rem(13);
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 
   @include mq("md") {
     display: none;
@@ -29,12 +22,8 @@
 }
 
 .c-section-title__square {
-  display: inline-block;
-  width: 2px;
+  width: rem(2);
   height: rem(24);
-  background-color: $red;
-  margin: 0 auto rem(8) auto;
-  display: flex;
 
   @include mq("md") {
     display: none;
