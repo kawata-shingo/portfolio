@@ -4,6 +4,13 @@
   text-transform: uppercase;
   font-size: rem(40);
   line-height: calc(49 / 40);
+  color: $blue;
+  font-family: $font-en;
+  font-weight: bold;
+
+  span {
+    color: $red;
+  }
 
   @include mq("md") {
     font-size: rem(91);
@@ -15,6 +22,10 @@
   display: inline-block;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: $red;
+  font-size: rem(14);
+  font-family: $font-en;
+  font-weight: bold;
 
   @include mq("md") {
     display: none;
@@ -24,6 +35,8 @@
 .c-section-title__square {
   width: rem(2);
   height: rem(24);
+  background-color: $red;
+  margin: 0 auto;
 
   @include mq("md") {
     display: none;

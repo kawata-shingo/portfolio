@@ -4,25 +4,51 @@
   position: relative;
   padding-top: rem(144);
   padding-bottom: rem(160);
+  @include mq("md") {
+    padding-top: rem(256);
+  }
+}
 
-  & .c-section-title {
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -57%);
+.p-advantages__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -57%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -25%);
+    text-align: left;
+    padding-left: rem(144);
   }
 }
 
 .p-advantages__point {
   padding-top: rem(48);
+  display: grid;
+  grid-template-rows: auto;
+
+  @include mq("md") {
+    padding-top: rem(112);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
 }
 
 .p-advantages__point-wrapper {
+  @include mq("md") {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    &.-reverse {
+      grid-column: 2/3;
+    }
+  }
 }
 
-.p-advantages__point-font-img {
+.p-advantages__point-img {
 }
 
 .p-advantages__point-title {
@@ -33,6 +59,10 @@
   & span {
     letter-spacing: -0.63em;
   }
+
+  @include mq("md") {
+    font-size: rem(28);
+  }
 }
 
 .p-advantages__point-sub {
@@ -40,12 +70,25 @@
   color: $blue;
   font-size: rem(18);
   margin-top: rem(16);
+
+  @include mq("md") {
+    font-size: rem(28);
+  }
 }
 
-.p-advantages__point-img {
+.p-advantages__img {
   display: flex;
   justify-content: center;
   margin-top: rem(32);
+
+  @include mq("md") {
+    grid-column: 2/3;
+    grid-row: 1/4;
+
+    &.-reverse {
+      grid-column: 1/2;
+    }
+  }
 }
 
 .p-advantages__point-text {
@@ -53,26 +96,54 @@
   font-size: rem(14);
   font-weight: 500;
   text-align: justify;
+
+  @include mq("md") {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: rem(16);
+
+    &.-reverse {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+}
+
+.p-advantages__button {
+  @include mq("md") {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }
 
 .p-advantages__point-list {
   margin-top: rem(32);
-  & li {
-    position: relative;
-    padding-left: rem(38);
-    font-size: rem(13);
-    font-weight: 500;
-    margin-top: rem(16);
-    text-align: justify;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: rem(22);
-      height: rem(22);
-      background: url("../images/check-icon.svg");
-      margin-left: rem(8);
-    }
+
+  @include mq("md") {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.p-advantages__point-list li {
+  position: relative;
+  padding-left: rem(38);
+  font-size: rem(13);
+  font-weight: 500;
+  margin-top: rem(16);
+  text-align: justify;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(22);
+    height: rem(22);
+    background: url("../images/check-icon.svg");
+    margin-left: rem(8);
+  }
+
+  @include mq("md") {
+    font-size: rem(16);
   }
 }

@@ -1,37 +1,16 @@
 @use "global" as *;
 
 .p-problem {
+  position: relative;
   background-color: $light-blue;
 }
-
-.p-problem__band {
-  position: relative;
-  background-color: $red;
-  height: rem(152);
-  display: flex;
-  align-items: center;
-  padding-left: rem(24);
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  overflow: hidden;
-}
-
-.p-problem__sub-title {
-  color: $white;
-  font-size: rem(20);
-  font-weight: bold;
-  line-height: calc(28 / 20);
-  letter-spacing: 0.16em;
-}
-
-.p-problem__check-img {
-  position: absolute;
-  top: 50%;
-  right: rem(-12);
-  transform: translateY(-50%);
-  width: rem(111);
-  height: rem(88);
-  opacity: 0.2;
+.p-band {
+  @include mq("md") {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
 
 .p-problem__img {
@@ -40,156 +19,265 @@
   justify-content: center;
   margin-top: rem(32);
   margin-bottom: rem(32);
+
+  @include mq("md") {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(318);
+    height: rem(318);
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(478);
+      height: rem(478);
+      transform: translate(-50%, -50%);
+      border-radius: rem(1000);
+      border: 8px solid $white;
+    }
+  }
+}
+
+.p-problem__items {
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .p-problem__left {
   & :nth-child(n + 2) {
     margin-top: rem(24);
   }
+
+  @include mq("md") {
+    & :nth-child(n + 2) {
+      margin-top: rem(95);
+    }
+  }
 }
 
 .p-problem__right {
   margin-top: rem(24);
-  & :nth-child(n + 2) {
+  :nth-child(n + 2) {
     margin-top: rem(24);
+  }
+
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(110);
+    :nth-child(n + 2) {
+      margin-top: rem(95);
+    }
+  }
+}
+
+.p-problem__item {
+  position: relative;
+  height: rem(56);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: rem(80);
+  font-size: rem(14);
+  font-weight: 500;
+  text-align: justify;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: rem(56);
+    height: rem(56);
+    margin-left: rem(8);
+    transform: translateY(-50%);
+  }
+
+  @include mq("md") {
+    box-sizing: border-box;
+    width: rem(520);
+    height: rem(128);
+    background-color: $white;
+    border-radius: rem(1000);
+    font-size: rem(22);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: rem(72);
+      height: rem(72);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: rem(112);
+      height: rem(112);
+      border-radius: rem(1000);
+      background-color: $light-blue;
+    }
   }
 }
 
 .p-problem__item-01 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-01.svg") center/rem(56) no-repeat;
+  }
+
+  @include mq("md") {
+    padding: rem(8) rem(16) rem(8) rem(24);
+    margin-left: rem(80);
+
+    span {
+      padding-right: rem(128);
+    }
+
+    &::after {
+      left: calc(100% - #{rem(36)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+      background: url("../images/problem-01.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: calc(100% - #{rem(16)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+    }
   }
 }
 .p-problem__item-02 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-02.svg") center/rem(56) no-repeat;
+  }
+
+  @include mq("md") {
+    padding: rem(8) rem(16) rem(8) rem(24);
+
+    span {
+      padding-right: rem(128);
+    }
+
+    &::after {
+      left: calc(100% - #{rem(36)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+      background: url("../images/problem-02.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: calc(100% - #{rem(16)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+    }
   }
 }
 .p-problem__item-03 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-03.svg") center/rem(56) no-repeat;
+  }
+
+  @include mq("md") {
+    padding: rem(8) rem(16) rem(8) rem(24);
+    margin-left: rem(80);
+
+    span {
+      padding-right: rem(128);
+    }
+
+    &::after {
+      left: calc(100% - #{rem(36)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+      background: url("../images/problem-03.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: calc(100% - #{rem(16)});
+      margin-left: 0;
+      transform: translate(-100%, -50%);
+    }
   }
 }
 .p-problem__item-04 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-04.svg") center/rem(56) no-repeat;
+  }
+
+  @include mq("md") {
+    padding: rem(8) rem(24) rem(8) rem(16);
+
+    span {
+      padding-left: rem(128);
+    }
+
+    &::after {
+      left: 0;
+      margin-left: rem(36);
+      transform: translate(0%, -50%);
+      background: url("../images/problem-04.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: 0;
+      margin-left: rem(16);
+      transform: translate(0%, -50%);
+    }
   }
 }
 .p-problem__item-05 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
-
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-05.svg") center/rem(56) no-repeat;
   }
-}
-.p-problem__item-06 {
-  position: relative;
-  height: rem(56);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: rem(80);
-  font-size: rem(14);
-  font-weight: 500;
-  text-align: justify;
 
+  @include mq("md") {
+    padding: rem(8) rem(24) rem(8) rem(16);
+    margin-left: rem(80);
+
+    span {
+      padding-left: rem(128);
+    }
+
+    &::after {
+      left: 0;
+      margin-left: rem(36);
+      transform: translate(0%, -50%);
+      background: url("../images/problem-05.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: 0;
+      margin-left: rem(16);
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+.p-problem__item-06 {
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: rem(56);
-    height: rem(56);
-    margin-left: rem(8);
-    transform: translateY(-50%);
     background: url("../images/problem-06.svg") center/rem(56) no-repeat;
+  }
+
+  @include mq("md") {
+    padding: rem(8) rem(24) rem(8) rem(16);
+
+    span {
+      padding-left: rem(128);
+    }
+
+    &::after {
+      left: 0;
+      margin-left: rem(36);
+      transform: translate(0%, -50%);
+      background: url("../images/problem-06.svg") center/rem(72) no-repeat;
+    }
+    &::before {
+      left: 0;
+      margin-left: rem(16);
+      transform: translate(0%, -50%);
+    }
   }
 }
