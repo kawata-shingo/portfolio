@@ -6,12 +6,24 @@
   background-color: $light-blue;
   position: relative;
 
-  & .c-section-title {
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -57%);
+  @include mq("md") {
+    padding-top: rem(256);
+    padding-bottom: rem(256);
+  }
+}
+
+.p-service__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -57%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -25%);
+    text-align: left;
+    padding-left: rem(144);
   }
 }

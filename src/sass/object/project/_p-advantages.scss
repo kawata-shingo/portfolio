@@ -84,6 +84,7 @@
   @include mq("md") {
     grid-column: 2/3;
     grid-row: 1/4;
+    margin-top: 0;
 
     &.-reverse {
       grid-column: 1/2;
@@ -139,7 +140,7 @@
     left: 0;
     width: rem(22);
     height: rem(22);
-    background: url("../images/check-icon.svg");
+    background: url("../images/check-icon.svg") center/rem(22) no-repeat;
     margin-left: rem(8);
   }
 

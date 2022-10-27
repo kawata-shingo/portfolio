@@ -23,3 +23,15 @@
     padding-left: rem(144);
   }
 }
+
+.l-inner__service {
+  width: 100%;
+  padding-right: rem(strip-unit($padding-sp));
+  padding-left: rem(strip-unit($padding-sp));
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    padding-right: rem(144);
+    padding-left: rem(144);
+  }
+}

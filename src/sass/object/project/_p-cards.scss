@@ -2,9 +2,16 @@
 
 .p-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   column-gap: rem(16);
   row-gap: rem(32);
+  justify-items: center;
+  @include mq("md") {
+    column-gap: rem(160);
+    row-gap: rem(48);
+    padding-left: rem(175);
+    padding-right: rem(175);
+  }
 }
 
 .p-option-cards {
