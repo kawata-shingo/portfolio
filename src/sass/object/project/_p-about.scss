@@ -7,38 +7,85 @@
   padding-bottom: rem(160);
   background-color: $white;
 
-  & .c-section-title {
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -80%);
+  @include mq("md") {
+    padding-top: rem(180);
   }
 }
 
+.p-about__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -50%);
+    text-align: left;
+    padding-left: rem(144);
+  }
+}
+
+.p-about__wrapper {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-about__profile {
+  @include mq("md") {
+    width: 50%;
+  }
+}
 .p-about__avatar {
   width: rem(136);
+  height: rem(136);
   margin: 0 auto;
+  @include mq("md") {
+    width: rem(325);
+    height: rem(325);
+  }
+}
+
+.p-about__avatar > img {
+  width: 100%;
 }
 
 .p-about__unit {
-  line-height: 1em;
   text-align: center;
   font-weight: 500;
 }
 
 .p-about__category {
   font-size: rem(10);
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 
 .p-about__name {
   font-size: rem(18);
   font-weight: bold;
+
+  @include mq("md") {
+    font-size: rem(28);
+  }
 }
 
 .p-about__lead {
   font-size: rem(12);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.p-about__description {
+  @include mq("md") {
+    width: 50%;
+  }
 }
 
 .p-about__text {
@@ -46,4 +93,14 @@
   font-size: rem(13);
   font-weight: 500;
   text-align: justify;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.p-about__button {
+  margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(96);
+  }
 }

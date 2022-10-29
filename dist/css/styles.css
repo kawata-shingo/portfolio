@@ -218,6 +218,20 @@ button {
   }
 }
 
+.l-inner__about {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .l-inner__about {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+}
+
 .l-main {
   margin-top: 5.625rem;
 }
@@ -617,7 +631,13 @@ button {
   padding-bottom: 10rem;
   background-color: #fff;
 }
-.p-about .c-section-title {
+@media screen and (min-width: 768px) {
+  .p-about {
+    padding-top: 11.25rem;
+  }
+}
+
+.p-about__title {
   width: 100%;
   z-index: 5;
   position: absolute;
@@ -625,15 +645,52 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -80%);
           transform: translate(-50%, -80%);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-about__title {
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    text-align: left;
+    padding-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__profile {
+    width: 50%;
+  }
 }
 
 .p-about__avatar {
   width: 8.5rem;
+  height: 8.5rem;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .p-about__avatar {
+    width: 20.3125rem;
+    height: 20.3125rem;
+  }
+}
+
+.p-about__avatar > img {
+  width: 100%;
 }
 
 .p-about__unit {
-  line-height: 1em;
   text-align: center;
   font-weight: 500;
 }
@@ -641,14 +698,35 @@ button {
 .p-about__category {
   font-size: 0.625rem;
 }
+@media screen and (min-width: 768px) {
+  .p-about__category {
+    font-size: 1rem;
+  }
+}
 
 .p-about__name {
   font-size: 1.125rem;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .p-about__name {
+    font-size: 1.75rem;
+  }
+}
 
 .p-about__lead {
   font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-about__lead {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__description {
+    width: 50%;
+  }
 }
 
 .p-about__text {
@@ -656,6 +734,20 @@ button {
   font-size: 0.8125rem;
   font-weight: 500;
   text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .p-about__text {
+    font-size: 1.125rem;
+  }
+}
+
+.p-about__button {
+  margin-top: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-about__button {
+    margin-top: 6rem;
+  }
 }
 
 .p-advantages {
