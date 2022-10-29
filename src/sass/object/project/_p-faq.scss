@@ -7,18 +7,53 @@
   padding-bottom: rem(160);
   background-color: $light-blue;
 
-  & .c-section-title {
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -80%);
+  @include mq("md") {
+    padding-top: rem(256);
+    padding-bottom: rem(256);
   }
 }
+
+.p-faq__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -50%);
+    text-align: left;
+    padding-left: rem(144);
+  }
+}
+
+.p-faq__list {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.p-faq__left {
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.p-faq__right {
+  @include mq("md") {
+    width: 50%;
+    padding-left: rem(16);
+  }
+}
+
 .p-faq__wrapper {
   border-top: 1px solid #000;
   padding: rem(24) rem(8);
+  @include mq("md") {
+    padding: rem(32) rem(24);
+  }
 }
 
 .p-faq__q {
@@ -28,30 +63,46 @@
   color: $blue;
   padding-left: rem(32);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: rem(24);
-    height: rem(24);
-    border-radius: rem(100);
-    background-color: $blue;
+  @include mq("md") {
+    font-size: rem(20);
+    padding-left: rem(40);
   }
+}
 
-  &:after {
-    content: "Q";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: $font-en;
-    font-size: rem(13);
-    color: $white;
-    width: rem(24);
-    height: rem(24);
+.p-faq__q::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(24);
+  height: rem(24);
+  border-radius: rem(100);
+  background-color: $blue;
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.p-faq__q::after {
+  content: "Q";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: $font-en;
+  font-size: rem(13);
+  color: $white;
+  width: rem(24);
+  height: rem(24);
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+    font-size: rem(16);
   }
 }
 
@@ -59,37 +110,56 @@
   position: relative;
   padding-left: rem(32);
   margin-top: rem(16);
+  font-weight: bold;
 
   & span {
     font-size: rem(16);
-    font-weight: bold;
     color: $red;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: rem(24);
-    height: rem(24);
-    border-radius: rem(100);
-    background-color: $red;
-  }
+  @include mq("md") {
+    padding-left: rem(40);
 
-  &:after {
-    content: "A";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: $font-en;
-    font-size: rem(13);
-    color: $white;
-    width: rem(24);
-    height: rem(24);
+    & span {
+      font-size: rem(20);
+    }
+  }
+}
+
+.p-faq__a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(24);
+  height: rem(24);
+  border-radius: rem(100);
+  background-color: $red;
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.p-faq__a::after {
+  content: "A";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: $font-en;
+  font-size: rem(13);
+  color: $white;
+  width: rem(24);
+  height: rem(24);
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+    font-size: rem(16);
   }
 }
 
@@ -98,4 +168,14 @@
   font-size: rem(13);
   font-weight: 500;
   text-align: justify;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.p-faq__button {
+  margin-top: rem(56);
+  @include mq("md") {
+    margin-top: rem(96);
+  }
 }
