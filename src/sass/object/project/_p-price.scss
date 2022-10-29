@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.p-price {
+  position: relative;
+  padding-top: rem(144);
+  padding-bottom: rem(160);
+  @include mq("md") {
+    padding-top: rem(256);
+  }
+}
+
+.p-price__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -57%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -25%);
+    text-align: left;
+    padding-left: rem(144);
+  }
+}
+
+.p-price__table {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-price__box-title {
+  font-size: rem(20);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(32);
+    text-align: center;
+  }
+}
+
+.p-price__box + .p-price__box {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: rem(112);
+  }
+}
+
+.p-price__box > .p-price__table {
+  margin-top: rem(32);
+}
+
+.p-price__box > .p-price__table + .p-price__table {
+  margin-top: 0;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.p-price__box-warning {
+  margin-top: rem(16);
+}

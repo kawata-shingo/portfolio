@@ -1,0 +1,196 @@
+@use "global" as *;
+
+.p-table {
+  width: 100%;
+}
+
+tr,
+th,
+td {
+  display: block;
+}
+
+.p-table__title {
+  font-size: rem(18);
+  color: $white;
+  padding: rem(24) 0;
+  background: $red;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.p-table__title--blue {
+  background: $blue;
+}
+
+.p-table__title > span {
+  font-size: rem(38);
+  padding: 0 5px;
+  @include mq("md") {
+    font-size: rem(50);
+  }
+}
+
+.p-table__item {
+  padding: rem(16);
+  background: $light-blue;
+  @include mq("md") {
+    padding: rem(24);
+  }
+}
+
+.p-table__item--white {
+  background: $white;
+}
+
+.p-table__item > .p-cards__option {
+  margin-top: rem(16);
+}
+
+.p-table__item--has-img {
+  padding: rem(16) rem(40);
+  @include mq("md") {
+    padding: rem(40);
+  }
+}
+
+.p-table__item-title {
+  font-size: rem(14);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.p-table__item-title--red {
+  color: $red;
+}
+
+.p-table__item-title--fz {
+  font-size: rem(18);
+}
+
+.p-table__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-table__box--repair {
+  justify-content: space-around;
+  @include mq("md") {
+    justify-content: space-between;
+  }
+}
+
+.p-table__box + .p-table__box {
+  margin-top: rem(8);
+}
+
+.p-table__price {
+  font-size: rem(20);
+  font-family: $font-en;
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(30);
+  }
+}
+
+.p-table__price--option {
+  text-align: center;
+}
+
+.p-table__price--option > span {
+  font-size: rem(20);
+}
+
+.p-table__name ~ .p-table__box {
+  margin-top: rem(16);
+}
+
+.p-table__item + .p-table__item {
+  margin-top: 1px;
+}
+
+.p-table__img {
+  width: rem(72);
+  height: rem(72);
+}
+
+.p-table__img--option {
+  width: rem(110);
+  height: rem(95);
+  @include mq("md") {
+    width: rem(180);
+    height: rem(150);
+  }
+}
+
+.p-table__img--option > img {
+  width: 100%;
+}
+
+.p-table__text {
+  font-size: rem(14);
+  font-weight: 500;
+  text-align: justify;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.p-table__item > .p-table__text {
+  margin-top: rem(16);
+}
+
+.p-table__due-date {
+  font-size: rem(20);
+  font-weight: bold;
+}
+
+.p-table__due-date > .p-table__num {
+  font-size: rem(38);
+  padding: 0 5px;
+}
+
+.p-table + .p-table {
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.p-table__repair {
+  @include mq("md") {
+    min-height: rem(340);
+  }
+}
+
+.p-table__flow {
+  @include mq("md") {
+    min-height: rem(300);
+  }
+}
+
+.p-table__logos {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(16);
+}
+
+.p-table__logo {
+  width: rem(32);
+  height: rem(32);
+  @include mq("md") {
+    width: rem(48);
+    height: rem(48);
+  }
+}
+
+.p-table__logo > img {
+  width: 100%;
+}
+
+.p-table__logo + .p-table__logo {
+  margin-left: rem(16);
+}

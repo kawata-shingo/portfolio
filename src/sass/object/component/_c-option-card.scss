@@ -7,8 +7,11 @@
 .c-option-card__img {
   width: rem(115);
   height: rem(90);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.c-option-card__img > img {
+  width: 100%;
 }
 
 .c-option-card__title {

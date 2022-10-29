@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-chips {
+  display: flex;
+  align-items: center;
+}
+
+.p-chips__title {
+  font-size: rem(12);
+  font-weight: 500;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}

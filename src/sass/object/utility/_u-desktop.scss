@@ -6,3 +6,10 @@
     display: block;
   }
 }
+
+.u-desktop--sp {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}

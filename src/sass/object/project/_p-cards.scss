@@ -14,9 +14,13 @@
   }
 }
 
-.p-option-cards {
+.p-cards__option {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: rem(16);
   row-gap: rem(48);
+  justify-items: center;
+  @include mq("md") {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

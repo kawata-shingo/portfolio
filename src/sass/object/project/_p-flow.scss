@@ -5,14 +5,24 @@
   padding-top: rem(144);
   padding-bottom: rem(160);
   background-color: $light-blue;
+  @include mq("md") {
+    padding-top: rem(256);
+  }
+}
 
-  & .c-section-title {
-    width: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -57%);
+.p-flow__title {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -57%);
+  text-align: center;
+  @include mq("md") {
+    left: 0;
+    transform: translate(0, -25%);
+    text-align: left;
+    padding-left: rem(144);
   }
 }
 
@@ -22,28 +32,106 @@
   font-weight: 500;
   width: 100%;
   text-align: center;
-  & span {
-    color: $red;
+
+  @include mq("md") {
+    font-size: rem(20);
   }
+}
+
+.p-flow__description > span {
+  color: $red;
 }
 
 .p-flow__step {
   border-top: 1px solid #000;
   padding: rem(24) rem(8);
+
+  @include mq("md") {
+    display: flex;
+    padding: rem(40) rem(32);
+    align-items: center;
+  }
 }
 
-.p-flow__number {
+.p-flow__icon {
   font-family: $font-en;
   font-size: rem(20);
   font-weight: bold;
   text-transform: uppercase;
   color: $red;
+  display: flex;
+  @include mq("md") {
+    width: rem(120);
+    height: rem(120);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $red;
+    border-radius: 50%;
+    position: relative;
+  }
+}
+
+.p-flow__icon-text {
+  @include mq("md") {
+    display: inline-block;
+    color: $white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.1em;
+  }
+}
+
+.p-flow__icon-square {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.p-flow__icon-number {
+  font-family: $font-en;
+  font-size: rem(20);
+  font-weight: bold;
+  text-transform: uppercase;
+  @include mq("md") {
+    display: inline-block;
+    color: $white;
+    font-size: rem(44);
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-flow__box {
+  @include mq("md") {
+    width: calc(100% - #{rem(120)});
+  }
+}
+
+.p-flow__icon + .p-flow__box {
+  @include mq("md") {
+    padding-left: rem(62);
+  }
+}
+
+.p-flow__table {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .p-flow__step-title {
   font-size: rem(18);
   font-weight: bold;
   color: $red;
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }
 
 .p-flow__step-text {
@@ -51,6 +139,9 @@
   font-size: rem(14);
   font-weight: 500;
   text-align: justify;
+  @include mq("md") {
+    font-size: rem(18);
+  }
 }
 
 .p-flow-table {
