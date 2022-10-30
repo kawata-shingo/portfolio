@@ -16,10 +16,16 @@
     left: 80%;
     transform: translate(-50%, -50%);
     width: rem(390);
-
     height: rem(395);
     opacity: 0.3;
     background: url("../images/contact_logo.svg") center/100% no-repeat;
+
+    @include mq("md") {
+      top: 65%;
+      left: 90%;
+      width: rem(570);
+      height: rem(580);
+    }
   }
 }
 
@@ -27,6 +33,9 @@
   color: $white;
   text-align: center;
   line-height: 1em;
+  @include mq("md") {
+    line-height: 1.5em;
+  }
 }
 
 .p-contact__title-en {
@@ -35,24 +44,31 @@
   font-family: $font-en;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  @include mq("md") {
+    font-size: rem(102);
+  }
 }
 
 .p-contact__title-ja {
   opacity: 0.5;
   font-size: rem(20);
+  @include mq("md") {
+    font-size: rem(32);
+  }
 }
 
 .p-contact__wrapper {
   @include mq("md") {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-around;
   }
 }
 
 .p-contact-button {
   padding-top: rem(40);
   @include mq("md") {
-    width: 50%;
+    // width: 50%;
   }
 }
 
@@ -62,4 +78,15 @@
   font-weight: bold;
   margin-bottom: rem(24);
   display: inline-block;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.p-contact-button--email > .p-button {
+  border: solid 2px $white;
+}
+
+.p-contact-button--calendar > .p-button:hover {
+  background: $blue;
 }

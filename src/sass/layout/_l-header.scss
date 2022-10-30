@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: 10;
-  @include mq("md") {
+  @include mq("xl") {
     height: 88px;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
   width: 169px;
   height: 20px;
   margin: 0 auto;
-  @include mq("md") {
+  @include mq("xl") {
     margin: 0;
     width: 337px;
     height: auto;
@@ -48,11 +48,14 @@
   gap: 8px;
 
   @include mq("md") {
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: 1fr;
     justify-self: start;
     gap: rem(32);
     font-size: 16px;
+  }
+
+  @include mq("xl") {
     padding-left: rem(48);
   }
 }

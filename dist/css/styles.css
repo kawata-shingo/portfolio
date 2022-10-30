@@ -31,7 +31,6 @@ button {
   }
   a:hover,
 button:hover {
-    opacity: 0.7;
     cursor: pointer;
   }
 }
@@ -149,6 +148,12 @@ button {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media screen and (min-width: 768px) {
+  .l-footer {
+    padding: 24px 64px;
+    height: 180px;
+  }
+}
 
 .l-footer__copy-light {
   font-family: "Montserrat", sans-serif;
@@ -166,7 +171,7 @@ button {
   left: 0;
   z-index: 10;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .l-header {
     height: 88px;
     display: -webkit-box;
@@ -187,7 +192,7 @@ button {
   height: 20px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .p-header__img {
     margin: 0;
     width: 337px;
@@ -215,11 +220,15 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-header__nav {
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: 1fr;
     justify-self: start;
     gap: 2rem;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .p-header__nav {
     padding-left: 3rem;
   }
 }
@@ -533,6 +542,272 @@ button {
           transform: rotate(0);
   border: none;
   background: url("../images/contact_calendar.svg") center/100% no-repeat;
+}
+
+.p-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-btn__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.p-button {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem 3.5rem;
+  border-radius: 624.9375rem;
+  border: solid 2px #dc3001;
+  text-align: center;
+  color: #dc3001;
+  font-weight: bold;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #dc3001;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0.875rem;
+  height: 0.875rem;
+  border-top: 0.1875rem solid #fff;
+  border-right: 0.1875rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.p-button:hover {
+  background: #dc3001;
+  color: #fff;
+}
+
+.p-button:hover::before {
+  left: calc(100% - 3rem);
+}
+
+.p-button:hover::after {
+  left: calc(100% - 2.125rem);
+}
+
+.p-button--email {
+  width: 20rem;
+  color: #dc3001;
+  border: solid 5px #fff;
+  padding: 1rem 3rem;
+  font-size: 0.875rem;
+  position: relative;
+  border-radius: 624.9375rem;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--email {
+    padding: 2rem 8.5rem;
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+}
+
+.p-button--email:hover {
+  background: #dc3001;
+  color: #fff;
+}
+
+.p-button--email::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background: #dc3001;
+  width: 3.125rem;
+  height: 3.125rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--email::before {
+    left: 2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+.p-button--email::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2.5625rem;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("../images/contact_email.svg") center/100% no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--email::after {
+    left: 4.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.p-button--email:hover::before {
+  left: calc(100% - 4.125rem);
+}
+@media screen and (min-width: 768px) {
+  .p-button--email:hover::before {
+    left: calc(100% - 7.5rem);
+  }
+}
+
+.p-button--email:hover::after {
+  left: calc(100% - 2.5625rem);
+}
+@media screen and (min-width: 768px) {
+  .p-button--email:hover::after {
+    left: calc(100% - 4.75rem);
+  }
+}
+
+.p-button--calender {
+  width: 20rem;
+  color: #112242;
+  border: solid 5px #fff;
+  padding: 1rem 3rem;
+  font-size: 0.875rem;
+  position: relative;
+  border-radius: 624.9375rem;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--calender {
+    width: 35rem;
+    padding: 2rem 8.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.p-button--calender:hover {
+  background: #112242;
+  color: #fff;
+}
+
+.p-button--calender::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background: #112242;
+  width: 3.125rem;
+  height: 3.125rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--calender::before {
+    left: 2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+.p-button--calender::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2.5625rem;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("../images/contact_calendar.svg") center/100% no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .p-button--calender::after {
+    left: 4.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.p-button--calender:hover::before {
+  left: calc(100% - 4.125rem);
+}
+@media screen and (min-width: 768px) {
+  .p-button--calender:hover::before {
+    left: calc(100% - 7.5rem);
+  }
+}
+
+.p-button--calender:hover::after {
+  left: calc(100% - 2.5625rem);
+}
+@media screen and (min-width: 768px) {
+  .p-button--calender:hover::after {
+    left: calc(100% - 4.75rem);
+  }
 }
 
 .c-card {
@@ -1114,11 +1389,24 @@ button {
   opacity: 0.3;
   background: url("../images/contact_logo.svg") center/100% no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .p-contact::before {
+    top: 65%;
+    left: 90%;
+    width: 35.625rem;
+    height: 36.25rem;
+  }
+}
 
 .p-contact__title {
   color: #fff;
   text-align: center;
   line-height: 1em;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__title {
+    line-height: 1.5em;
+  }
 }
 
 .p-contact__title-en {
@@ -1128,10 +1416,20 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+@media screen and (min-width: 768px) {
+  .p-contact__title-en {
+    font-size: 6.375rem;
+  }
+}
 
 .p-contact__title-ja {
   opacity: 0.5;
   font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__title-ja {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1139,27 +1437,36 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 .p-contact-button {
   padding-top: 2.5rem;
 }
-@media screen and (min-width: 768px) {
-  .p-contact-button {
-    width: 50%;
-  }
-}
-
 .p-contact-button__label {
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .p-contact-button__label {
+    font-size: 1.5rem;
+  }
+}
+
+.p-contact-button--email > .p-button {
+  border: solid 2px #fff;
+}
+
+.p-contact-button--calendar > .p-button:hover {
+  background: #112242;
 }
 
 .p-faq {

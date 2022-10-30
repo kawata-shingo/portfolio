@@ -103,3 +103,220 @@
     background: url("../images/contact_calendar.svg") center/100% no-repeat;
   }
 }
+
+.p-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-btn__contact {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.p-button {
+  position: relative;
+  box-sizing: border-box;
+  padding: rem(16) rem(56);
+  border-radius: rem(9999);
+  border: solid 2px $red;
+  text-align: center;
+  color: $red;
+  font-weight: bold;
+  background: $white;
+  transition: 0.3s;
+}
+
+.p-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(8);
+  transform: translateY(-50%);
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background: $red;
+  transition: 0.3s;
+}
+
+.p-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(20);
+  transform-origin: top right;
+  transform: translateY(-50%);
+  width: rem(14);
+  height: rem(14);
+  border-top: rem(3) solid $white;
+  border-right: rem(3) solid $white;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.p-button:hover {
+  background: $red;
+  color: $white;
+}
+
+.p-button:hover::before {
+  left: calc(100% - #{rem(48)});
+}
+
+.p-button:hover::after {
+  left: calc(100% - #{rem(34)});
+}
+
+.p-button--email {
+  width: rem(320);
+  color: $red;
+  border: solid 5px $white;
+  padding: rem(16) rem(48);
+  font-size: rem(14);
+  position: relative;
+  border-radius: rem(9999);
+  text-align: center;
+  font-weight: bold;
+  background: $white;
+  transition: 0.3s;
+
+  @include mq("md") {
+    padding: rem(32) rem(136);
+    font-size: rem(24);
+    width: rem(560);
+  }
+}
+
+.p-button--email:hover {
+  background: $red;
+  color: $white;
+}
+
+.p-button--email::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(16);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: $red;
+  width: rem(50);
+  height: rem(50);
+  transition: 0.3s;
+  @include mq("md") {
+    left: rem(32);
+    width: rem(88);
+    height: rem(88);
+  }
+}
+
+.p-button--email::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(41);
+  transform-origin: top right;
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: rem(24);
+  background: url("../images/contact_email.svg") center/100% no-repeat;
+  transition: 0.3s;
+
+  @include mq("md") {
+    left: rem(76);
+    width: rem(40);
+    height: rem(40);
+  }
+}
+
+.p-button--email:hover::before {
+  left: calc(100% - #{rem(66)});
+  @include mq("md") {
+    left: calc(100% - #{rem(120)});
+  }
+}
+
+.p-button--email:hover::after {
+  left: calc(100% - #{rem(41)});
+  @include mq("md") {
+    left: calc(100% - #{rem(76)});
+  }
+}
+
+.p-button--calender {
+  width: rem(320);
+  color: $blue;
+  border: solid 5px $white;
+  padding: rem(16) rem(48);
+  font-size: rem(14);
+  position: relative;
+  border-radius: rem(9999);
+  text-align: center;
+  font-weight: bold;
+  background: $white;
+  transition: 0.3s;
+
+  @include mq("md") {
+    width: rem(560);
+    padding: rem(32) rem(136);
+    font-size: rem(24);
+  }
+}
+
+.p-button--calender:hover {
+  background: $blue;
+  color: $white;
+}
+
+.p-button--calender::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(16);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: $blue;
+  width: rem(50);
+  height: rem(50);
+  transition: 0.3s;
+  @include mq("md") {
+    left: rem(32);
+    width: rem(88);
+    height: rem(88);
+  }
+}
+
+.p-button--calender::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(41);
+  transform-origin: top right;
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: rem(24);
+  background: url("../images/contact_calendar.svg") center/100% no-repeat;
+  transition: 0.3s;
+
+  @include mq("md") {
+    left: rem(76);
+    width: rem(40);
+    height: rem(40);
+  }
+}
+
+.p-button--calender:hover::before {
+  left: calc(100% - #{rem(66)});
+  @include mq("md") {
+    left: calc(100% - #{rem(120)});
+  }
+}
+
+.p-button--calender:hover::after {
+  left: calc(100% - #{rem(41)});
+  @include mq("md") {
+    left: calc(100% - #{rem(76)});
+  }
+}

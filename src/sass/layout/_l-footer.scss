@@ -9,6 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  @include mq("md") {
+    padding: 24px 64px;
+    height: 180px;
+  }
 }
 
 .l-footer__copy-light {
