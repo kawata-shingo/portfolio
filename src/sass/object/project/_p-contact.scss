@@ -23,13 +23,13 @@
   }
 }
 
-.p-contact-title {
+.p-contact__title {
   color: $white;
   text-align: center;
   line-height: 1em;
 }
 
-.p-contact-title__en {
+.p-contact__title-en {
   font-size: rem(40);
   font-weight: bold;
   font-family: $font-en;
@@ -37,13 +37,23 @@
   letter-spacing: 0.1em;
 }
 
-.p-contact-title__ja {
+.p-contact__title-ja {
   opacity: 0.5;
   font-size: rem(20);
 }
 
+.p-contact__wrapper {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .p-contact-button {
   padding-top: rem(40);
+  @include mq("md") {
+    width: 50%;
+  }
 }
 
 .p-contact-button__label {

@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .c-section-title {
+  position: relative;
   text-transform: uppercase;
   font-size: rem(40);
   line-height: calc(49 / 40);
@@ -28,7 +29,12 @@
   font-weight: bold;
 
   @include mq("md") {
-    display: none;
+    position: absolute;
+    top: rem(30);
+    right: rem(64);
+    font-size: rem(102);
+    opacity: 0.1;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -38,6 +44,12 @@
   background-color: $red;
   margin: 0 auto;
 
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.c-section-title__scroll {
   @include mq("md") {
     display: none;
   }

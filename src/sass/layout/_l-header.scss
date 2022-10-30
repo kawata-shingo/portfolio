@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.l-header {
+  background: rgba(255, 255, 255, 70%);
+  padding: 8px 24px;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @include mq("md") {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 24px 64px;
+  }
+}
+
+.p-header__img {
+  width: 169px;
+  height: 20px;
+  margin: 0 auto;
+  @include mq("md") {
+    margin: 0;
+    width: 337px;
+    height: auto;
+  }
+}
+
+.p-header__img > img {
+  width: 100%;
+}
+
+.p-header__nav {
+  margin-top: 8px;
+  color: $blue;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: $font-en;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  text-align: center;
+  gap: 8px;
+
+  @include mq("md") {
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 1fr;
+    justify-self: start;
+    gap: rem(32);
+    font-size: 16px;
+    padding-left: rem(48);
+  }
+}
+
+.p-header__nav > a:hover {
+  color: $red;
+}

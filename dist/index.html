@@ -31,7 +31,21 @@
     <script defer src="./js/script.js"></script>
   </head>
   <body>
-    <header>headerだよ！</header>
+    <header>
+      <div class="l-header p-header">
+        <div class="p-header__img">
+          <img src="./images/logo_header.svg" alt="" />
+        </div>
+        <div class="p-header__nav">
+          <a href="#advantages">advantages</a>
+          <a href="#service">service</a>
+          <a href="#price">price</a>
+          <a href="#flow">flow</a>
+          <a href="#faq">faq</a>
+          <a href="#contact">contact</a>
+        </div>
+      </div>
+    </header>
     <main class="l-main">
       <!--mv-->
       <section class="l-inner p-mv">
@@ -48,7 +62,7 @@
           </div>
         </div>
         <div class="l-mv__scroll p-section-title">
-          <span class="c-section-title__sub">scroll</span>
+          <span class="c-section-title__sub c-section-title__scroll">scroll</span>
           <div class="c-section-title__square"></div>
         </div>
       </section>
@@ -91,7 +105,7 @@
       </section>
 
       <!--advantages-->
-      <section class="l-inner__advantages p-advantages">
+      <section class="l-inner__advantages p-advantages" id="advantages">
         <h2 class="p-advantages__title c-section-title">
           <span class="c-section-title__sub">advantages</span>
           <div class="c-section-title__square"></div>
@@ -167,7 +181,7 @@
       </section>
 
       <!--service-->
-      <section class="l-inner__service p-service">
+      <section class="l-inner__service p-service" id="service">
         <h2 class="p-service__title c-section-title">
           <span class="c-section-title__sub">service</span>
           <div class="c-section-title__square"></div>
@@ -245,7 +259,7 @@
       </section>
 
       <!--price-->
-      <section class="l-inner__price p-price">
+      <section class="l-inner__price p-price" id="price">
         <h2 class="p-price__title c-section-title">
           <span class="c-section-title__sub">price</span>
           <div class="c-section-title__square"></div>
@@ -596,7 +610,7 @@
       </section>
 
       <!--flow-->
-      <section class="l-inner__flow p-flow">
+      <section class="l-inner__flow p-flow" id="flow">
         <h2 class="p-flow__title c-section-title">
           <span class="c-section-title__sub">flow</span>
           <div class="c-section-title__square"></div>
@@ -797,7 +811,7 @@
       </section>
 
       <!--faq-->
-      <section class="l-inner__faq p-faq">
+      <section class="l-inner__faq p-faq" id="faq">
         <h2 class="p-faq__title c-section-title">
           <span class="c-section-title__sub">faq</span>
           <div class="c-section-title__square"></div>
@@ -857,42 +871,49 @@
       </section>
 
       <!--contact-->
-      <!-- <section class="l-inner p-contact">
-        <h2 class="p-contact-title">
-          <span class="p-contact-title__en">contact</span><br />
-          <span class="p-contact-title__ja">お問い合わせ</span>
+      <section class="l-inner__contact p-contact" id="contact">
+        <h2 class="p-contact__title">
+          <span class="p-contact__title-en">contact</span><br />
+          <span class="p-contact__title-ja">お問い合わせ</span>
         </h2>
-        <div class="p-contact-button">
-          <span class="p-contact-button__label"
-            >お急ぎの方、<br />コーディング代行を依頼したい方</span
-          >
-          <div class="c-button c-button--height">
-            <a
-              class="c-button__link c-button__link--big c-button__link--tall c-button__link--borer-white"
-              href=""
+        <div class="p-contact__wrapper">
+          <div class="p-contact-button">
+            <span class="p-contact-button__label"
+              >お急ぎの方、<br />コーディング代行を依頼したい方</span
             >
-              <span class="c-button__circle c-button__circle--big c-button__circle--email"> </span>
-              <span>かんたんスピーディー！<br />お見積りはこちら</span>
-            </a>
-          </div>
-        </div>
-        <div class="p-contact-button">
-          <span class="p-contact-button__label">まずはオンラインで相談したい方</span>
-          <div class="c-button c-button--height">
-            <a
-              class="c-button__link c-button__link--big c-button__link--tall c-button__link--blue c-button__link--borer-white"
-              href=""
-            >
-              <span
-                class="c-button__circle c-button__circle--big c-button__circle--calendar c-button__circle--blue"
+            <div class="c-button c-button--height">
+              <a
+                class="c-button__link c-button__link--big c-button__link--tall c-button__link--borer-white"
+                href=""
               >
-              </span>
-              <span>カレンダーから<br />予約日を選ぶ</span>
-            </a>
+                <span class="c-button__circle c-button__circle--big c-button__circle--email">
+                </span>
+                <span>かんたんスピーディー！<br />お見積りはこちら</span>
+              </a>
+            </div>
+          </div>
+          <div class="p-contact-button">
+            <span class="p-contact-button__label">まずはオンラインで相談したい方</span>
+            <div class="c-button c-button--height">
+              <a
+                class="c-button__link c-button__link--big c-button__link--tall c-button__link--blue c-button__link--borer-white"
+                href=""
+              >
+                <span
+                  class="c-button__circle c-button__circle--big c-button__circle--calendar c-button__circle--blue"
+                >
+                </span>
+                <span>カレンダーから<br />予約日を選ぶ</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <footer></footer> -->
+      <footer>
+        <div class="l-footer">
+          <span class="l-footer__copy-light">©️ 2022 BUG FREE CODING</span>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

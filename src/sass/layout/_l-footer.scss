@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.l-footer {
+  width: 100%;
+  height: 90px;
+  background: $blue;
+  color: $white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.l-footer__copy-light {
+  font-family: $font-en;
+  font-weight: bold;
+  font-size: 12px;
+}

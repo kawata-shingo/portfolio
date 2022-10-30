@@ -30,20 +30,6 @@ body {
   color: $text;
 }
 
-//ヘッダー
-header {
-  background-color: pink;
-  height: rem(90);
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  @include mq("md") {
-    height: rem(88);
-  }
-}
-
 // ホバー
 a,
 button {
