@@ -1280,10 +1280,6 @@ button {
   }
 }
 
-.p-advantages__button > .p-button {
-  font-size: 0.875rem;
-}
-
 .p-advantages__point-list {
   margin-top: 2rem;
 }
