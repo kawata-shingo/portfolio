@@ -112,6 +112,7 @@
 
 .p-advantages__button {
   margin-top: rem(56);
+  width: rem(325);
   @include mq("md") {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -120,7 +121,6 @@
 
 .p-advantages__point-list {
   margin-top: rem(32);
-
   @include mq("md") {
     grid-column: 2/3;
     grid-row: 2/3;
