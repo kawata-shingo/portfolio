@@ -1,121 +1,17 @@
 @use "global" as *;
 
-.c-button {
-  position: relative;
-  min-height: rem(56);
-}
-
-.c-button--height {
-  min-height: rem(72);
-}
-.c-button__link {
-  background-color: #fff;
-  border: 2px solid $red;
-  border-radius: 9999px;
-  color: $red;
-  display: inline-grid;
-  min-height: rem(56);
-  min-width: rem(248);
-  padding: 0 rem(24);
-  place-items: center;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  text-align: center;
-}
-
-.c-button__link--big {
-  min-width: rem(312);
-}
-
-.c-button__link--small {
-  min-width: rem(224);
-}
-.c-button__link--borer-white {
-  border: 2px solid $white;
-}
-
-.c-button__link--blue {
-  color: $blue;
-}
-
-.c-button__link--tall {
-  min-height: rem(72);
-}
-
-.c-button__circle {
-  background-color: $red;
-  border-radius: 9999px;
-  color: $white;
-  display: grid;
-  height: rem(36);
-  left: calc(#{rem(36)} / 4);
-  place-items: center;
-  position: absolute;
-  top: calc(50% - #{rem(36)} / 2);
-  width: rem(36);
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(10);
-    height: rem(10);
-    margin-right: rem(4);
-    border-top: 2px solid $white;
-    border-right: 2px solid $white;
-    transform: rotate(45deg);
-  }
-}
-
-.c-button__circle--blue {
-  background-color: $blue;
-}
-
-.c-button__circle--big {
-  width: rem(48);
-  height: rem(48);
-  top: calc(50% - #{rem(48)} / 2);
-}
-
-.c-button__circle--email {
-  &::after {
-    width: rem(24);
-    height: rem(22);
-    margin-right: 0;
-    transform: rotate(0);
-    border: none;
-    background: url("../images/contact_email.svg") center/100% no-repeat;
-  }
-}
-
-.c-button__circle--calendar {
-  &::after {
-    width: rem(24);
-    height: rem(22);
-    margin-right: 0;
-    transform: rotate(0);
-    border: none;
-    background: url("../images/contact_calendar.svg") center/100% no-repeat;
-  }
-}
-
-.p-btn {
+.p-button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.p-btn__contact {
+.p-button__contact {
   display: flex;
   align-items: center;
   justify-content: left;
 }
-.p-button {
+.c-button {
   position: relative;
   box-sizing: border-box;
   padding: rem(16) rem(56);
@@ -128,7 +24,7 @@
   transition: 0.3s;
 }
 
-.p-button::before {
+.c-button::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -141,7 +37,7 @@
   transition: 0.3s;
 }
 
-.p-button::after {
+.c-button::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -156,20 +52,20 @@
   transition: 0.3s;
 }
 
-.p-button:hover {
+.c-button:hover {
   background: $red;
   color: $white;
 }
 
-.p-button:hover::before {
+.c-button:hover::before {
   left: calc(100% - #{rem(48)});
 }
 
-.p-button:hover::after {
+.c-button:hover::after {
   left: calc(100% - #{rem(34)});
 }
 
-.p-button--email {
+.c-button--email {
   width: rem(320);
   color: $red;
   border: solid 5px $white;
@@ -189,12 +85,12 @@
   }
 }
 
-.p-button--email:hover {
+.c-button--email:hover {
   background: $red;
   color: $white;
 }
 
-.p-button--email::before {
+.c-button--email::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -212,7 +108,7 @@
   }
 }
 
-.p-button--email::after {
+.c-button--email::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -231,21 +127,21 @@
   }
 }
 
-.p-button--email:hover::before {
+.c-button--email:hover::before {
   left: calc(100% - #{rem(66)});
   @include mq("md") {
     left: calc(100% - #{rem(120)});
   }
 }
 
-.p-button--email:hover::after {
+.c-button--email:hover::after {
   left: calc(100% - #{rem(41)});
   @include mq("md") {
     left: calc(100% - #{rem(76)});
   }
 }
 
-.p-button--calender {
+.c-button--calender {
   width: rem(320);
   color: $blue;
   border: solid 5px $white;
@@ -265,12 +161,12 @@
   }
 }
 
-.p-button--calender:hover {
+.c-button--calender:hover {
   background: $blue;
   color: $white;
 }
 
-.p-button--calender::before {
+.c-button--calender::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -288,7 +184,7 @@
   }
 }
 
-.p-button--calender::after {
+.c-button--calender::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -307,14 +203,14 @@
   }
 }
 
-.p-button--calender:hover::before {
+.c-button--calender:hover::before {
   left: calc(100% - #{rem(66)});
   @include mq("md") {
     left: calc(100% - #{rem(120)});
   }
 }
 
-.p-button--calender:hover::after {
+.c-button--calender:hover::after {
   left: calc(100% - #{rem(41)});
   @include mq("md") {
     left: calc(100% - #{rem(76)});
