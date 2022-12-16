@@ -19,6 +19,18 @@
   }
 }
 
+.c-section-title--under {
+  color: $red;
+  font-size: rem(38);
+  text-transform: uppercase;
+  font-family: $font-en;
+  font-weight: bold;
+
+  @include mq("md") {
+    font-size: rem(96);
+  }
+}
+
 .c-section-title__sub {
   display: inline-block;
   letter-spacing: 0.2em;
@@ -38,6 +50,16 @@
   }
 }
 
+.c-section-title__sub--under {
+  font-size: rem(20);
+  color: $blue;
+  font-weight: bold;
+
+  @include mq("md") {
+    font-size: rem(38);
+  }
+}
+
 .c-section-title__square {
   width: rem(2);
   height: rem(24);
@@ -52,5 +74,25 @@
 .c-section-title__scroll {
   @include mq("md") {
     display: none;
+  }
+}
+
+.c-section-title__under-title {
+  font-size: rem(32);
+  color: $red;
+  text-transform: uppercase;
+  font-family: $font-en;
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(72);
+  }
+}
+
+.c-section-title__under-subtitle {
+  font-size: rem(18);
+  font-weight: bold;
+  color: $blue;
+  @include mq("md") {
+    font-size: rem(38);
   }
 }

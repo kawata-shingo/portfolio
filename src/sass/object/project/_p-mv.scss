@@ -64,3 +64,10 @@
     width: rem(616);
   }
 }
+
+.p-mv__under {
+  padding: rem(72) 0 rem(24) 0;
+  @include mq("md") {
+    padding: rem(104) 0 rem(48) 0;
+  }
+}

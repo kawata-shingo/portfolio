@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-img__profile {
+  width: rem(136);
+  height: rem(136);
+  @include mq("md") {
+    width: rem(325);
+    height: rem(325);
+  }
+}
+
+.c-img__twitter {
+  width: rem(16);
+  height: rem(16);
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.c-img__career {
+  width: rem(80);
+  height: rem(80);
+  @include mq("md") {
+    width: rem(104);
+    height: rem(104);
+  }
+}

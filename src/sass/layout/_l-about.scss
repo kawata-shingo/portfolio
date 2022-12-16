@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.l-about {
+  position: relative;
+}
+.l-about__img {
+  position: absolute;
+  right: rem(192);
+  top: rem(40);
+  width: rem(460);
+  height: rem(460);
+}
+
+.l-about__career-img {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  @include mq("md") {
+    top: -52px;
+  }
+}
+
+.l-about__profile {
+  background: $light-blue;
+  padding: rem(48) 0;
+  @include mq("md") {
+    padding: rem(80) 0;
+  }
+}
+
+.l-about__career {
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding: rem(120) 0;
+  }
+}
+
+.l-about__feature {
+  background: $light-blue;
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding: rem(120) 0;
+  }
+}

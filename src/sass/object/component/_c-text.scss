@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.c-text__breadcrumb {
+  position: relative;
+  display: inline-block;
+  font-size: rem(13);
+  font-family: $font-en;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.c-text__breadcrumb:not(:last-child) {
+  padding-right: rem(24);
+  @include mq("md") {
+    padding-right: rem(32);
+  }
+}
+
+.c-text__breadcrumb:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: rem(8);
+  transform: translateY(-50%);
+  width: rem(10);
+  height: rem(10);
+  transform-origin: top right;
+  border-top: 2px solid $red;
+  border-right: 2px solid $red;
+  transform: rotate(45deg);
+  @include mq("md") {
+    width: rem(14);
+    height: rem(14);
+    border-top: rem(3) solid $red;
+    border-right: rem(3) solid $red;
+  }
+}
+
+.c-text__profile-name {
+  font-size: rem(18);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(38);
+  }
+}
+
+.c-text__profile-des {
+  font-size: rem(10);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.c-text__career {
+  font-size: rem(13);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}

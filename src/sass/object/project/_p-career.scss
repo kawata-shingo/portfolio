@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.p-career {
+  @include mq("md") {
+    display: flex;
+  }
+}
+.p-career__wrapper {
+  position: relative;
+}
+
+.p-career__wrapper .c-text__career {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.p-career__wrapper:not(:first-child) {
+  margin-top: rem(64);
+}
+
+.p-career--reverse {
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
