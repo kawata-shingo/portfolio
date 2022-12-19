@@ -1114,6 +1114,10 @@ button {
   }
 }
 
+.c-text__breadcrumb:not(:last-child):hover {
+  color: #dc3001;
+}
+
 .c-text__breadcrumb:not(:last-child)::after {
   content: "";
   position: absolute;

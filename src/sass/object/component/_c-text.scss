@@ -19,6 +19,10 @@
   }
 }
 
+.c-text__breadcrumb:not(:last-child):hover {
+  color: $red;
+}
+
 .c-text__breadcrumb:not(:last-child)::after {
   content: "";
   position: absolute;
