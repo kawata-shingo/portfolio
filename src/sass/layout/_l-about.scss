@@ -29,6 +29,7 @@
 }
 
 .l-about__career {
+  position: relative;
   padding: rem(80) 0;
   @include mq("md") {
     padding: rem(120) 0;
@@ -36,9 +37,45 @@
 }
 
 .l-about__feature {
+  position: relative;
   background: $light-blue;
   padding: rem(80) 0;
   @include mq("md") {
     padding: rem(120) 0;
+  }
+}
+
+.l-about__title {
+  position: absolute;
+  top: rem(-24);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  @include mq("md") {
+    top: rem(-56);
+    transform: translateX(0);
+    text-align: left;
+  }
+}
+
+.l-about__title--feature {
+  position: absolute;
+  top: rem(-24);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  @include mq("md") {
+    top: rem(-56);
+    left: rem(144);
+    transform: translateX(0);
+    text-align: left;
+  }
+}
+
+.l-about__title .c-section-title__under-subtitle,
+.l-about__title--feature .c-section-title__under-subtitle {
+  margin-top: rem(-8);
+  @include mq("md") {
+    margin-top: rem(-24);
   }
 }

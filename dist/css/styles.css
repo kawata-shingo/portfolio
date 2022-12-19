@@ -166,6 +166,7 @@ button {
 }
 
 .l-about__career {
+  position: relative;
   padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
@@ -175,12 +176,59 @@ button {
 }
 
 .l-about__feature {
+  position: relative;
   background: #eff3f6;
   padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
   .l-about__feature {
     padding: 7.5rem 0;
+  }
+}
+
+.l-about__title {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .l-about__title {
+    top: -3.5rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    text-align: left;
+  }
+}
+
+.l-about__title--feature {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .l-about__title--feature {
+    top: -3.5rem;
+    left: 9rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    text-align: left;
+  }
+}
+
+.l-about__title .c-section-title__under-subtitle,
+.l-about__title--feature .c-section-title__under-subtitle {
+  margin-top: -0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-about__title .c-section-title__under-subtitle,
+.l-about__title--feature .c-section-title__under-subtitle {
+    margin-top: -1.5rem;
   }
 }
 
