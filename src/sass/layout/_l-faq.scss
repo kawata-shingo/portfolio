@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.l-faq__img {
+  z-index: 1;
+  position: absolute;
+  right: rem(192);
+  top: rem(80);
+  width: rem(615);
+  height: rem(410);
+}
+
+.l-faq__under {
+  background: $light-blue;
+}
+
+.l-faq__under .l-S02 {
+  width: calc(100% - rem(48));
+  margin: 0 auto;
+  padding: rem(48) 0;
+  @include mq("md") {
+    width: rem(800);
+    padding: rem(80) 0;
+  }
+}
