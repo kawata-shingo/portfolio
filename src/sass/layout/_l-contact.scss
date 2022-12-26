@@ -1,0 +1,140 @@
+@use "global" as *;
+
+.l-contact {
+  display: flex;
+  justify-content: center;
+  background-color: $light-blue;
+}
+.l-contact__img {
+  z-index: 1;
+  position: absolute;
+  right: rem(192);
+  top: rem(8);
+  width: rem(500);
+  height: rem(500);
+}
+
+.l-contact .p-form {
+  padding: rem(32) 0;
+  border-top: 1px solid $blue;
+  @include mq("md") {
+    padding: rem(64) rem(56);
+  }
+}
+
+.l-contact .l-S02 {
+  padding: rem(48) 0;
+  @include mq("md") {
+    padding: rem(80) 0;
+    max-width: 1400px;
+  }
+}
+
+.l-contact .l-L02 {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.l-contact .l-L11 {
+  padding-top: rem(32);
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.l-contact .l-L02:not(:first-child) {
+  padding-top: rem(32);
+}
+
+.l-contact .l-L03 {
+  width: rem(190);
+}
+
+.l-contact .l-L04,
+.l-contact .l-L05 {
+  width: 100%;
+  @include mq("md") {
+    width: calc(100% - rem(190));
+  }
+}
+
+.l-contact .l-L04 input,
+.l-contact .l-L04 textarea {
+  width: 100%;
+  border: solid 2px $blue;
+  padding: 5px;
+}
+
+.l-contact .l-L04 input:focus,
+.l-contact .l-L04 textarea:focus {
+  outline: 0;
+  border: solid 2px $red;
+}
+
+.l-contact .l-L07:not(:first-child) {
+  padding-top: rem(16);
+}
+
+.l-contact dt,
+.l-contact label {
+  font-size: rem(18);
+  font-family: $font-main;
+  font-weight: bold;
+  color: $blue;
+}
+
+.l-contact .l-L10 {
+  padding-bottom: rem(32);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: $white;
+    border-radius: 50%;
+    border: solid 1.5px $blue;
+  }
+}
+
+input[type="radio"]:checked + label {
+  &::before {
+    border: solid 1.5px $red;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: $red;
+    border-radius: 50%;
+  }
+}
+
+input[type="button"] {
+  border: none;
+  background: none;
+  color: $red;
+}
+
+.c-button:hover input[type="button"] {
+  color: $white;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>bug free coding</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/guide.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="l-header p-header">
+        <div class="p-header__img">
+          <img src="./images/logo_header.svg" alt="" />
+        </div>
+        <div class="p-header__nav">
+          <a href="#advantages">advantages</a>
+          <a href="#service">service</a>
+          <a href="#price">price</a>
+          <a href="#flow">flow</a>
+          <a class="u-desktop" href="#about">about&nbsp;me</a>
+          <a href="#faq">faq</a>
+          <a href="#contact">contact</a>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+      <!--mv-->
+      <section class="l-about l-inner--m">
+        <div class="p-mv__under">
+          <h1 class="c-section-title--under">contact</h1>
+          <p class="c-section-title__sub--under">お問い合わせ・お見積もり</p>
+        </div>
+        <div class="p-breadcrumb">
+          <a href="./index.html" class="c-text__breadcrumb">top</a>
+          <p class="c-text__breadcrumb">contact</p>
+        </div>
+        <div class="l-contact__img u-desktop"><img src="./images/contact_img.svg" alt="" /></div>
+      </section>
+
+      <!--contact-->
+      <section class="l-contact l-inner--l l-S01">
+        <div class="l-S02">
+          <div class="l-L10">
+            <p class="c-text__contact">
+              <span class="c-text__en">BF CODING</span
+              >のサイトをご覧いただきありがとうございます。<br />
+              下記フォームよりコーディング関するお見積り内容をご入力ください。
+            </p>
+          </div>
+          <div class="p-form">
+            <form class="l-L01" action="php/mailform.php" method="post" id="mail_form">
+              <dl class="l-L02">
+                <dt class="l-L03"><i></i>名前</dt>
+                <dd class="l-L04 required">
+                  <input type="text" name="name_1" value="" />
+                </dd>
+              </dl>
+              <dl class="l-L02">
+                <dt class="l-L03"><i></i>メールアドレス</dt>
+                <dd class="l-L04 required"><input type="email" name="mail_address" value="" /></dd>
+              </dl>
+              <dl class="l-L02">
+                <dt class="l-L03"><i></i>ご希望納品日</dt>
+                <dd class="l-L04 required">
+                  <input type="text" name="schedule" value="" readonly="readonly" />
+                </dd>
+              </dl>
+              <dl class="l-L11 p-budget">
+                <dt class="l-L03"><i></i>ご予算</dt>
+                <dd class="l-L05 required">
+                  <ul class="l-L06">
+                    <li class="l-L07">
+                      <input type="radio" name="budge" value="男性" id="budget01" checked />
+                      <label class="l-L08" for="budget01">~10,000円</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="budge" value="女性" id="budget02" />
+                      <label class="l-L08" for="budget02">10,000 〜 50,000円</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="budge" value="女性" id="budget03" />
+                      <label class="l-L08" for="budget03">50,000 〜 100,000円</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="budge" value="女性" id="budget04" />
+                      <label class="l-L08" for="budget04">100,000 〜 20,000円</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="budge" value="女性" id="budget05" />
+                      <label class="l-L08" for="budget05">20,000 〜</label>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl class="l-L11 p-design">
+                <dt class="l-L03"><i></i>お持ちのデザイン</dt>
+                <dd class="l-L05 required">
+                  <ul class="l-L06">
+                    <li class="l-L07">
+                      <input type="radio" name="design" value="男性" id="design01" checked />
+                      <label class="l-L08" for="design01">なし</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="design" value="女性" id="design02" />
+                      <label class="l-L08" for="design02">PCデザインのみ</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="design" value="女性" id="design03" />
+                      <label class="l-L08" for="design03">SPデザインのみ</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="design" value="女性" id="design04" />
+                      <label class="l-L08" for="design04">両方あり</label>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl class="l-L11 p-page">
+                <dt class="l-L03"><i></i>予定ページ数</dt>
+                <dd class="l-L05 required">
+                  <ul class="l-L06">
+                    <li class="l-L07">
+                      <input type="radio" name="page" value="男性" id="page01" checked />
+                      <label class="l-L08" for="page01">1(LP)</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="page" value="女性" id="page02" />
+                      <label class="l-L08" for="page02">2~5</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="page" value="女性" id="page03" />
+                      <label class="l-L08" for="page03">6~10</label>
+                    </li>
+                    <li class="l-L07">
+                      <input type="radio" name="page" value="女性" id="page04" />
+                      <label class="l-L08" for="page04">10~</label>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+
+              <dl class="l-L11">
+                <dt class="l-L03"><i></i>お問い合わせの内容</dt>
+                <dd class="l-L04 required">
+                  <textarea name="contents" cols="40" rows="5"></textarea>
+                </dd>
+              </dl>
+              <div class="p-about__button p-button">
+                <p class="c-button" id="form_submit" href="">
+                  <input type="button" id="form_submit_button" value="送信する" />
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="l-footer">
+        <span class="l-footer__copy-light">&copy; 2022 BUG FREE CODING</span>
+      </div>
+    </footer>
+  </body>
+</html>

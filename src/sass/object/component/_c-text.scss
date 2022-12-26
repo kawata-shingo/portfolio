@@ -64,3 +64,15 @@
     font-size: rem(16);
   }
 }
+
+.c-text__contact {
+  font-size: rem(14);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.c-text__en {
+  font-family: $font-en;
+}

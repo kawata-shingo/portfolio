@@ -232,6 +232,163 @@ button {
   }
 }
 
+.l-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eff3f6;
+}
+
+.l-contact__img {
+  z-index: 1;
+  position: absolute;
+  right: 12rem;
+  top: 0.5rem;
+  width: 31.25rem;
+  height: 31.25rem;
+}
+
+.l-contact .p-form {
+  padding: 2rem 0;
+  border-top: 1px solid #112242;
+}
+@media screen and (min-width: 768px) {
+  .l-contact .p-form {
+    padding: 4rem 3.5rem;
+  }
+}
+
+.l-contact .l-S02 {
+  padding: 3rem 0;
+}
+@media screen and (min-width: 768px) {
+  .l-contact .l-S02 {
+    padding: 5rem 0;
+    max-width: 1400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .l-contact .l-L02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.l-contact .l-L11 {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .l-contact .l-L11 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.l-contact .l-L02:not(:first-child) {
+  padding-top: 2rem;
+}
+
+.l-contact .l-L03 {
+  width: 11.875rem;
+}
+
+.l-contact .l-L04,
+.l-contact .l-L05 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .l-contact .l-L04,
+.l-contact .l-L05 {
+    width: calc(100% - 11.875rem);
+  }
+}
+
+.l-contact .l-L04 input,
+.l-contact .l-L04 textarea {
+  width: 100%;
+  border: solid 2px #112242;
+  padding: 5px;
+}
+
+.l-contact .l-L04 input:focus,
+.l-contact .l-L04 textarea:focus {
+  outline: 0;
+  border: solid 2px #dc3001;
+}
+
+.l-contact .l-L07:not(:first-child) {
+  padding-top: 1rem;
+}
+
+.l-contact dt,
+.l-contact label {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  color: #112242;
+}
+
+.l-contact .l-L10 {
+  padding-bottom: 2rem;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  position: relative;
+  padding-left: 24px;
+}
+input[type=radio] + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  border: solid 1.5px #112242;
+}
+
+input[type=radio]:checked + label::before {
+  border: solid 1.5px #dc3001;
+}
+input[type=radio]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #dc3001;
+  border-radius: 50%;
+}
+
+input[type=button] {
+  border: none;
+  background: none;
+  color: #dc3001;
+}
+
+.c-button:hover input[type=button] {
+  color: #fff;
+}
+
 /*
   l-container
 ----------------------------------------------- */
@@ -505,6 +662,20 @@ button {
   .l-inner--m {
     padding-right: 9rem;
     padding-left: 9rem;
+  }
+}
+
+.l-inner--l {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .l-inner--l {
+    padding-right: 20rem;
+    padding-left: 20rem;
   }
 }
 
@@ -1312,6 +1483,20 @@ button {
   .c-text__career {
     font-size: 1rem;
   }
+}
+
+.c-text__contact {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .c-text__contact {
+    font-size: 1.125rem;
+  }
+}
+
+.c-text__en {
+  font-family: "Montserrat", sans-serif;
 }
 
 .c-warning {
