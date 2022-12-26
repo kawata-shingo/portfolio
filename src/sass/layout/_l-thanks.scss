@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.l-thanks {
+  background: $light-blue;
+}
+
+.l-thanks .l-S02 {
+  padding: rem(48) 0;
+  @include mq("md") {
+    padding: rem(80) 0;
+    width: 50%;
+  }
+}
+
+.l-thanks p:not(:first-child) {
+  padding-top: rem(24);
+  font-weight: normal;
+}

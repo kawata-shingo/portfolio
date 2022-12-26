@@ -78,7 +78,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -805,6 +804,25 @@ input[type=button] {
   }
 }
 
+.l-thanks {
+  background: #eff3f6;
+}
+
+.l-thanks .l-S02 {
+  padding: 3rem 0;
+}
+@media screen and (min-width: 768px) {
+  .l-thanks .l-S02 {
+    padding: 5rem 0;
+    width: 50%;
+  }
+}
+
+.l-thanks p:not(:first-child) {
+  padding-top: 1.5rem;
+  font-weight: normal;
+}
+
 .c-band {
   position: relative;
   background-color: #dc3001;
@@ -1492,6 +1510,16 @@ input[type=button] {
 @media screen and (min-width: 768px) {
   .c-text__contact {
     font-size: 1.125rem;
+  }
+}
+
+.c-text__thanks {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .c-text__thanks {
+    font-size: 1rem;
   }
 }
 
