@@ -138,3 +138,11 @@ input[type="button"] {
 .c-button:hover input[type="button"] {
   color: $white;
 }
+
+form#mail_form dl dd span.error_blank,
+form#mail_form dl dd span.error_format,
+form#mail_form dl dd span.error_match {
+  display: block;
+  color: #ff0000;
+  margin-top: 5px;
+}

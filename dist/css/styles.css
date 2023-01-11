@@ -388,6 +388,14 @@ input[type=button] {
   color: #fff;
 }
 
+form#mail_form dl dd span.error_blank,
+form#mail_form dl dd span.error_format,
+form#mail_form dl dd span.error_match {
+  display: block;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
 /*
   l-container
 ----------------------------------------------- */
@@ -3288,6 +3296,10 @@ input[type=button] {
     color: #fff;
     background-color: #112242;
   }
+}
+
+.u-red {
+  color: #dc3001;
 }
 
 .u-desktop {

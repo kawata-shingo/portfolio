@@ -31,7 +31,7 @@ $rm_thanks_page_url = './thanks.html';
 // 通常これは記入する必要はありません。以下の初期状態のように空欄のままにしておけばOK。
 // なりすまし判定を受けてメールが受信できない場合にのみ、以下のページを参考にして設定すると良いでしょう。
 // https://www.1-firststep.com/archives/15075
-$rm_from_address = '';
+$rm_from_address = 'aaa@.xsrv.jp';
 
 
 

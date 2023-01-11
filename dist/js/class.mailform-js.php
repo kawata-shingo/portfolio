@@ -18,7 +18,7 @@ class Mailform_Js {
 	
 	
 	// label addon property
-	private $required_text         = '必須';
+	private $required_text         = '*';
 	private $optional_text         = '任意';
 	
 	
