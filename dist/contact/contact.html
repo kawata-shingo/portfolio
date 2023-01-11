@@ -18,6 +18,7 @@
     <!-- ファビコン -->
     <link rel="icon" href="../images/favicon.ico" />
     <!-- css -->
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/guide.css" />
     <!-- font -->
@@ -73,7 +74,7 @@
             </p>
           </div>
           <div class="p-form">
-            <form class="l-L01" action="php/mailform.php" method="post" id="mail_form">
+            <form class="l-L01" action="../php/mailform.php" method="post" id="mail_form">
               <dl class="l-L02">
                 <dt class="l-L03"><i></i>名前</dt>
                 <dd class="l-L04 required">
@@ -176,6 +177,16 @@
                 </p>
               </div>
             </form>
+            <script src="../js/jquery.datetimepicker.js"></script>
+            <script>
+              (function ($) {
+                $('input[name="schedule"]').datetimepicker({
+                  lang: "ja",
+                });
+              })(jQuery);
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="../js/mailform-js.php"></script>
           </div>
         </div>
       </section>

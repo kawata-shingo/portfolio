@@ -5,7 +5,7 @@
 
 
 //【必須】 自分のメールアドレスの設定 -- 複数のメールアドレスに送信したい場合は、以下の行をコピーして増やしていけばOKです。行頭の//を消せば有効となります。いくつでも追加可能。 --
-$rm_send_address[] = 'aaa@example.co.jp';
+$rm_send_address[] = 'bugfreecoding@gmail.com';
 //$rm_send_address[] = 'bbb@example.co.jp';
 //$rm_send_address[] = 'ccc@example.co.jp';
 
@@ -13,7 +13,7 @@ $rm_send_address[] = 'aaa@example.co.jp';
 
 
 //【必須】 サンクスページのURL -- index.htmlからの相対パス、またはhttp://からの絶対パス --
-$rm_thanks_page_url = 'thanks.html';
+$rm_thanks_page_url = './thanks.html';
 
 
 
@@ -74,7 +74,7 @@ $rm_reply_mail = 1;
 
 
 //【だいたい必須】 メールの差出人名に表示される自分の名前 -- 相手への自動返信メールに使用されます --
-$rm_send_name = 'レスポンシブメールフォーム　差出人';
+$rm_send_name = 'BugFreeCoding　河田真吾';
 
 
 
@@ -103,10 +103,9 @@ $rm_thanks_body_signature = <<<EOM
 この度はお問い合わせを頂き、重ねてお礼申し上げます。
 -----------------------------------------------------------------------------------
 
-　　レスポンシブメールフォーム
-　　〒100-0001 ここに住所など
-　　090-111-2222
-　　https://www.1-firststep.com
+    BugFreeCoding
+    090-111-2222
+    https://bugfreecoding.com
 
 -----------------------------------------------------------------------------------
 
