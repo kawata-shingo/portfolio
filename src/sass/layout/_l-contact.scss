@@ -133,6 +133,11 @@ input[type="button"] {
   border: none;
   background: none;
   color: $red;
+  padding: rem(16) rem(56);
+}
+
+#form_submit {
+  padding: 0;
 }
 
 .c-button:hover input[type="button"] {

@@ -382,6 +382,11 @@ input[type=button] {
   border: none;
   background: none;
   color: #dc3001;
+  padding: 1rem 3.5rem;
+}
+
+#form_submit {
+  padding: 0;
 }
 
 .c-button:hover input[type=button] {
