@@ -79,9 +79,6 @@
 
 .p-table__box--repair {
   justify-content: space-around;
-  @include mq("md") {
-    justify-content: space-between;
-  }
 }
 
 .p-table__box + .p-table__box {

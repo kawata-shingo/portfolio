@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.p-check {
+  background-color: $light-blue;
+  color: $blue;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+}
+
+.p-check__nav-title {
+  font-size: rem(24);
+  font-weight: bold;
+}
+
+.p-check__nav-list {
+  margin-top: rem(16);
+}
+
+.p-check__nav-item {
+  font-size: rem(18);
+  font-weight: 500;
+}
+
+.p-check__nav-item a {
+  position: relative;
+  display: inline-block;
+}
+
+.p-check__nav-item:not(:first-child) {
+  margin-top: rem(8);
+}
+
+.p-check__nav-item::before {
+  content: "・";
+  color: $red;
+}
+
+.p-check__nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: rem(-2);
+  left: 0;
+  width: 100%;
+  height: rem(2);
+  background: $blue;
+  border-radius: rem(999);
+  transition: 0.2s;
+  @include mq(md) {
+    width: 0;
+  }
+}
+
+.p-check__nav-item a:hover::after {
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.p-check__list {
+  margin-top: rem(48);
+}

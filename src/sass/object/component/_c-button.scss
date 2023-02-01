@@ -11,6 +11,13 @@
   align-items: center;
   justify-content: left;
 }
+
+.p-button__contact.disabled > * {
+  background: gray;
+  border: gray;
+  pointer-events: none;
+}
+
 .c-button {
   position: relative;
   box-sizing: border-box;

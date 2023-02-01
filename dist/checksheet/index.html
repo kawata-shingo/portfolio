@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>bug free coding</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="l-header p-header">
+        <div class="p-header__img">
+          <a href="../">
+            <img src="../images/logo_header.svg" alt="" />
+          </a>
+        </div>
+        <div class="p-header__nav">
+          <a href="../#advantages">advantages</a>
+          <a href="../#service">service</a>
+          <a href="../#price">price</a>
+          <a href="../#flow">flow</a>
+          <a class="u-desktop" href="../about/">about&nbsp;me</a>
+          <a href="../faq/">faq</a>
+          <a href="../contact/">contact</a>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+      <!--mv-->
+      <section class="l-check l-inner--m">
+        <div class="p-mv__under">
+          <h1 class="c-section-title--under">check&nbsp;sheet</h1>
+          <p class="c-section-title__sub--under">チェックシート</p>
+        </div>
+        <div class="p-breadcrumb">
+          <a href="../" class="c-text__breadcrumb">top</a>
+          <p class="c-text__breadcrumb">check sheet</p>
+        </div>
+        <div class="l-check__img u-desktop">
+          <img src="../images/advantages-01_img.svg" alt="" />
+        </div>
+      </section>
+
+      <!--checklist-->
+      <section class="p-check">
+        <div class="l-inner--l">
+          <div class="p-check__nav">
+            <h3 class="p-check__nav-title">チェック項目</h3>
+            <ul class="p-check__nav-list">
+              <li class="p-check__nav-item">
+                <a href="">サイト上での確認</a>
+              </li>
+              <li class="p-check__nav-item">
+                <a href="">コーディング</a>
+              </li>
+              <li class="p-check__nav-item">
+                <a href="">SEO・マーケティング関連</a>
+              </li>
+              <li class="p-check__nav-item">
+                <a href="">権利・セキュリティ関連</a>
+              </li>
+              <li class="p-check__nav-item">
+                <a href="">WordPress</a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-check__list">
+            <div class="p-check__item p-check-list">
+              <div class="p-check-list__title">
+                <h2>サイト上での確認</h2>
+              </div>
+              <div class="p-check-list__list">
+                <div class="p-check-list__item">
+                  <h3>テキスト</h3>
+                  <ol>
+                    <li><p>誤字・脱字・機種依存文字・ダミーテキストなどは残っていないか</p></li>
+                    <li><p>意図的ではない表記のゆれがないか（例：WEB・Web・ウェブ）</p></li>
+                    <li><p>表記の統一（半角・全角・日付などで表記がブレていないか）</p></li>
+                    <li>
+                      <p>
+                        フォントが反映されているか（「WhatFont（Chromeのプラグイン）」、ブラウザの検証ツールなどで確認）
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>画像</h3>
+                  <ol>
+                    <li><p>ダミー画像・未購入画像などは残っていないか</p></li>
+                    <li><p>画像を圧縮してファイルサイズを小さくしているか</p></li>
+                    <li><p>Retinaディスプレイ対応のため画像は2倍で書き出しされているか</p></li>
+                    <li><p>altが正しく設定されているか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>コンテンツ</h3>
+                  <ol>
+                    <li><p>余白がデザインカンプ通りに設定されているか</p></li>
+                    <li>
+                      <p>カラーがデザインカンプ通りに設定されているか（「ColorPick」などで確認）</p>
+                    </li>
+                    <li><p>横スクロールは発生していないか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>ホバー</h3>
+                  <ol>
+                    <li><p>ホバー時の動きが指示通りになっているか</p></li>
+                    <li>
+                      <p>
+                        ホバー時の動きは、急な変化になっていないか（transition設定ができているか）
+                      </p>
+                    </li>
+                    <li><p>ホバー時のカーソルはポインターになっているか</p></li>
+                    <li><p>PCのみホバーアクションになっているか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>フォーム</h3>
+                  <ol>
+                    <li><p>バリデーションをフロントサイド・サーバーサイドでかけているか</p></li>
+                    <li><p>メールがちゃんと届くか（ユーザー側・管理者側）</p></li>
+                    <li><p>迷惑メール・文字化けなどは起こしていないか</p></li>
+                    <li><p>クライアントにメールチェックOKもらっているか</p></li>
+                    <li><p>確認・サンクス画面に遷移するか</p></li>
+                    <li>
+                      <p>
+                        スマホで入力欄のfont-sizeを16px以上にしたか（それ以下だと入力時に拡大される）
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        同じメールが複数届かないようになっているか（送信ボタンを連打した時など）
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>アニメーション</h3>
+                  <ol>
+                    <li><p>指示通りのアニメーションをしているか</p></li>
+                    <li><p>不自然な動きがないか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>エラー</h3>
+                  <ol>
+                    <li><p>ページ内でリンク切れを起こしていないか</p></li>
+                    <li><p>SNSなど外部のリンク先は正しいか</p></li>
+                    <li><p>404ページを作成したか</p></li>
+                    <li><p>URLにパラメーターが付いても、jsやPHPの処理が正常に行われるか</p></li>
+                    <li><p>予期せぬリダイレクトはかかっていないか</p></li>
+                    <li><p>コンソールエラーが出ていないか（検証ツールで確認）</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>その他</h3>
+                  <ol>
+                    <li>
+                      <p>
+                        iframeなど埋め込んだ外部メディア（地図、動画、SNSなど）が正しく表示されているか
+                      </p>
+                    </li>
+                    <li><p>スマホでiframe要素が見切れていないか</p></li>
+                    <li><p>ブレイクポイント前後でチェック（640pxなら、639, 640, 641で確認）</p></li>
+                    <li><p>表示速度が遅すぎるページはないか（とくにモバイル環境にて）</p></li>
+                    <li><p>対象ブラウザで正しく表示されているか</p></li>
+                    <li><p>ページャーなどの2ページ目以降が正しく表示されるか</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="p-check__item p-check-list">
+              <div class="p-check-list__title">
+                <h2>コーディング</h2>
+              </div>
+              <div class="p-check-list__list">
+                <div class="p-check-list__item">
+                  <h3>HTML</h3>
+                  <ol>
+                    <li><p>DOCTYPEが正しく記述されているか</p></li>
+                    <li><p>開始タグと終了タグが対応しているか</p></li>
+                    <li><p>文字エンコーディングが正しく設定されているか</p></li>
+                    <li><p>不正な文字参照がないか</p></li>
+                    <li><p>要素(headやbodyなど)が正しい場所に配置されているか</p></li>
+                    <li><p>要素の階層が正しいか(li要素がulやol要素の子要素であるか)</p></li>
+                    <li>
+                      <p>
+                        要素のグループが正しいか(thead, tbody, tfoot要素はtable要素の子要素であるか)
+                      </p>
+                    </li>
+                    <li><p>要素の組み合わせが正しいか(form要素の子要素にinput要素があるか)</p></li>
+                    <li><p>属性値がクォーテーションで囲まれているか</p></li>
+                    <li><p>不正なタグ名が使用されていないか</p></li>
+                    <li><p>不正な属性名が使用されていないか</p></li>
+                    <li><p>必須の属性が欠落していないか</p></li>
+                    <li><p>無効な属性値が使用されていないか</p></li>
+                    <li><p>不正な文字参照が使用されていないか</p></li>
+                    <li><p>不要な空白や改行がないか</p></li>
+                    <li><p>リンクや画像のパスが正しく記述されているか</p></li>
+                    <li><p>画像のAlt属性が適切に設定されているか</p></li>
+                    <li><p>不要なコメントは残っていないか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>CSS</h3>
+                  <ol>
+                    <li><p>セレクタにスペルミスがないか</p></li>
+                    <li><p>不正なセレクタ(不正な要素やID、クラス名など)が使用されていないか</p></li>
+                    <li>
+                      <p>
+                        不正なプロパティ(存在しないプロパティや、対象の要素に対して使用していないプロパティ)が使用されていないか
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        不正な値(プロパティに対して適切でない値や存在しない値)が使用されていないか
+                      </p>
+                    </li>
+                    <li><p>単位(px、em、%など)の欠落がないか</p></li>
+                    <li><p>ブロック(大括弧{})の欠落がないか</p></li>
+                    <li><p>セミコロン(;)の欠落がないか</p></li>
+                    <li><p>@ルール(@import,@charsetなど)が正しく指定されているか</p></li>
+                    <li><p>URL(background-imageなど)が正しく指定されているか</p></li>
+                    <li><p>カラーコード(#000,rgb,hslなど)が正しく指定されているか</p></li>
+                    <li><p>ベンダープレフィックスが正しく指定されているか</p></li>
+                    <li>
+                      <p>
+                        プロパティショートハンド(background, border, font)が正しく指定されているか
+                      </p>
+                    </li>
+                    <li><p>一貫性を持った命名規則に従ったクラス名にしているか</p></li>
+                    <li>
+                      <p>セレクタの組み合わせが(親子関係、兄弟関係など)が正しく指定されているか</p>
+                    </li>
+                    <li><p>使用していないセレクタの記述がないか</p></li>
+                    <li><p>セレクタの記述が重複していないか</p></li>
+                    <li><p>minify化したか</p></li>
+                    <li><p>不要なコメントは残っていないか</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>javascript</h3>
+                  <ol>
+                    <li><p>スペルミスがないか</p></li>
+                    <li><p>使用していない変数がないか</p></li>
+                    <li><p>不正な演算子を使用していないか</p></li>
+                    <li><p>括弧が閉じられているか</p></li>
+                    <li><p>セミコロンが欠落していないか</p></li>
+                    <li><p>スコープが正しく設定されているか</p></li>
+                    <li><p>console.logは残っていないか</p></li>
+                    <li><p>minify化したか</p></li>
+                    <li><p>不要なコメントは残っていないか</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="p-check__item p-check-list">
+              <div class="p-check-list__title">
+                <h2>SEO・マーケティング関連</h2>
+              </div>
+              <div class="p-check-list__list">
+                <div class="p-check-list__item">
+                  <h3>herderタグ内</h3>
+                  <ol>
+                    <li>
+                      <p>タイトル・メタ ディスクリプションの設定（下層ページも要チェック）</p>
+                    </li>
+                    <li><p>canonicalの設定（URLの正規化）</p></li>
+                    <li><p>noindex, nofollow の解除</p></li>
+                    <li><p>ファビコンの設定</p></li>
+                    <li><p>OGPの設定</p></li>
+                  </ol>
+                </div>
+                <div class="p-check-list__item">
+                  <h3>計測タグ</h3>
+                  <ol>
+                    <li><p>Googleアナリティクス</p></li>
+                    <li><p>コンバージョンタグは正しく計測されるか</p></li>
+                    <li><p>Google Search Console</p></li>
+                    <li><p>Google Tag Manager</p></li>
+                    <li><p>その他の計測タグ</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="p-check__item p-check-list">
+              <div class="p-check-list__title">
+                <h2>権利・セキュリティ関連</h2>
+              </div>
+              <div class="p-check-list__list">
+                <div class="p-check-list__item">
+                  <h3>権利・セキュリティ</h3>
+                  <ol>
+                    <li>
+                      <p>コピーライト表記を入れているか</p>
+                    </li>
+                    <li><p>著作権侵害の疑いのあるコンテンツを使っていないか</p></li>
+                    <li><p>サイトポリシーを表示しているか</p></li>
+                    <li><p>プライバシーポリシーを表示しているか</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="p-check__item p-check-list">
+              <div class="p-check-list__title">
+                <h2>WordPress</h2>
+              </div>
+              <div class="p-check-list__list">
+                <div class="p-check-list__item">
+                  <h3>WordPress</h3>
+                  <ol>
+                    <li><p>ログイン画面のURLを変更したか</p></li>
+                    <li><p>/?author=1でユーザー名が表示されないか</p></li>
+                    <li><p>デバッグモードをoffにしたか</p></li>
+                    <li><p>不要な記事データが残っていないか（下書き含む）</p></li>
+                    <li><p>不要なプラグインは残っていないか</p></li>
+                    <li><p>データベースのバックアップ対応の有無</p></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--contact-->
+      <section class="l-inner__contact p-contact" id="contact">
+        <h2 class="p-contact__title">
+          <span class="p-contact__title-en">contact</span><br />
+          <span class="p-contact__title-ja">お問い合わせ</span>
+        </h2>
+        <div class="p-contact__wrapper">
+          <div class="p-contact-button">
+            <span class="p-contact-button__label"
+              >お急ぎの方、<br />コーディング代行を依頼したい方</span
+            >
+            <div class="p-button__contact">
+              <a class="c-button--email" href="">かんたんスピーディー！<br />お見積りはこちら</a>
+            </div>
+          </div>
+          <div class="p-contact-button">
+            <span class="p-contact-button__label"
+              >まずはオンラインで相談したい方 <br />※現在利用不可</span
+            >
+            <div class="p-button__contact disabled">
+              <a class="c-button--calender" href="./contact/">カレンダーから<br />予約日を選ぶ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="l-footer">
+        <span class="l-footer__copy-light">&copy; 2023 BUG FREE CODING</span>
+      </div>
+    </footer>
+  </body>
+</html>

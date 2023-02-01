@@ -67,9 +67,6 @@
 
 .p-contact-button {
   padding-top: rem(40);
-  @include mq("md") {
-    // width: 50%;
-  }
 }
 
 .p-contact-button__label {
