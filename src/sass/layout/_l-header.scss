@@ -61,5 +61,7 @@
 }
 
 .p-header__nav > a:hover {
-  color: $red;
+  @include mq(md) {
+    color: $red;
+  }
 }

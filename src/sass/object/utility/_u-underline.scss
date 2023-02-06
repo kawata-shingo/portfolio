@@ -2,8 +2,14 @@
 
 .u-underline {
   text-decoration: underline;
+  color: $red;
+  @include mq(md) {
+    color: $blue;
+  }
+}
 
-  &:hover {
+.u-underline:hover {
+  @include mq(md) {
     color: $red;
   }
 }

@@ -132,8 +132,11 @@ input[type="radio"]:checked + label {
 input[type="button"] {
   border: none;
   background: none;
-  color: $red;
+  color: $white;
   padding: rem(16) rem(56);
+  @include mq(md) {
+    color: $red;
+  }
 }
 
 #form_submit {
@@ -141,7 +144,9 @@ input[type="button"] {
 }
 
 .c-button:hover input[type="button"] {
-  color: $white;
+  @include mq(md) {
+    color: $white;
+  }
 }
 
 form#mail_form dl dd span.error_blank,

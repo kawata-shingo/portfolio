@@ -14,13 +14,17 @@
 
 .c-text__breadcrumb:not(:last-child) {
   padding-right: rem(24);
+  color: $red;
   @include mq("md") {
     padding-right: rem(32);
+    color: $blue;
   }
 }
 
 .c-text__breadcrumb:not(:last-child):hover {
-  color: $red;
+  @include mq(md) {
+    color: $red;
+  }
 }
 
 .c-text__breadcrumb:not(:last-child)::after {

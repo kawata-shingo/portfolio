@@ -85,5 +85,7 @@
 }
 
 .p-contact-button--calendar > .p-button:hover {
-  background: $blue;
+  @include mq(md) {
+    background: $blue;
+  }
 }
